@@ -8,8 +8,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 1414,
-      "sha256": "750554fadbd8e72029459872da6ff88a1af9690e3a9001185ca948dbd20a2287"
+      "bytes": 1426,
+      "sha256": "f14aaa086f2dbc12c676a280ebdcaa5da6c3ac56038edf0f0e8bb95211fb6245"
     },
     {
       "path": ".nvmrc",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5449,
-      "sha256": "3d19f129d750cb76ed5df3d38f86b35d6654759d6811d8734cba556705943ca2"
+      "bytes": 5517,
+      "sha256": "eb11fea4e006fee2bc6e275fd09870564c6fbc00944ffb6b242e3c2f02bbc05b"
     },
     {
       "path": "RUN.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/CONTEST-READINESS-2026-10-22.md",
-      "bytes": 4189,
-      "sha256": "157d09421710b3ee3648c3535555b11b81104e89e4aaaabba60c0090a1d019f0"
+      "bytes": 4432,
+      "sha256": "fcad2b4c5960aea467ba2f68a6d76047cb625f5bf0013df2e16bab56e297910a"
     },
     {
       "path": "docs/DEMO.md",
@@ -48,18 +48,18 @@
     },
     {
       "path": "docs/GITHUB-PREPARATION.md",
-      "bytes": 3116,
-      "sha256": "9d5f589562a4e22aa331bbc7331eb85e02e3718eb690c02bc5addb8493255440"
+      "bytes": 3723,
+      "sha256": "e48e194c9ca7dce0d3f9def51e9afa9f8b8202a9d41281d81ac879ef612e243a"
     },
     {
       "path": "docs/SUBMISSION-FORM-DRAFT.md",
-      "bytes": 5903,
-      "sha256": "3256e77536b31c36e5b2c73f99f8905dfce2f2035eecee36889807a2b0b3d535"
+      "bytes": 6107,
+      "sha256": "ab84156fbcdd8a2bc53759764c00872a49b1ac0a1ef9e25437ceb77a09e0e5c4"
     },
     {
       "path": "docs/SUBMISSION.md",
-      "bytes": 3531,
-      "sha256": "af47e582157189603eebe7b1890c9eb748d30509ec38dbee00bbb5335170bb1c"
+      "bytes": 3557,
+      "sha256": "9eba250bd47510a88308679421dd7e5141484d6cc78d5533b5b5f6df8b53f801"
     },
     {
       "path": "docs/archive/plan-before-synthesis-2026-10-20.md",
@@ -432,5 +432,5 @@
       "sha256": "fd101b2a51ad887240e32c18ff5f203a3db1828e3e7081a1ee382aae88c5636a"
     }
   ],
-  "note": "Payload hashes; this manifest excludes itself."
+  "note": "Payload hashes for the current repository snapshot, excluding this manifest. Initially imported from the verified v3 archive; public-link documentation updates followed."
 }

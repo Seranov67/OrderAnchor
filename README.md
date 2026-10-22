@@ -1,5 +1,7 @@
 # OrderAnchor
 
+[GitHub repository](https://github.com/Seranov67/OrderAnchor) · [Offline checks](https://github.com/Seranov67/OrderAnchor/actions/workflows/checks.yml)
+
 Recover the outcome of a dreamDEX Perps operation after a lost RPC response or process restart, without placing the same order again.
 
 OrderAnchor is a local prototype for developers who need to answer: **Did my transaction land, what happened to the order, and is it safe to continue?**
@@ -73,7 +75,7 @@ All submission documentation is available in English. Start with [the submission
 
 ## Repository preparation
 
-The reviewed v3 submission folder is the source for a future public repository. It contains application code, tests, pinned dependencies, startup instructions, English submission drafts and allowlisted public evidence. See [publication preparation](docs/GITHUB-PREPARATION.md) for the exact package boundary and validation. Publication and contest submission remain pending; no public repository URL is claimed.
+The public repository is [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor). Its initial commit publishes the 87 files from the verified v3 submission archive; subsequent documentation updates add public links and refresh the manifest. See [publication preparation](docs/GITHUB-PREPARATION.md) for provenance and validation. Contest submission and X posts remain pending.
 
 ## X posts
 

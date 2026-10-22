@@ -1,6 +1,6 @@
 # OrderAnchor — submission form draft
 
-Prepared on 22 October 2026. Draft only: nothing has been published or submitted. The exact form fields and character limits have not been inspected beyond the organizer disclaimer. Adapt the sections below to the actual form.
+Prepared on 22 October 2026. The project repository is now public; this form text and X posts remain drafts and the contest form has not been submitted. The exact form fields and character limits have not been inspected beyond the organizer disclaimer. Adapt the sections below to the actual form.
 
 ## Name
 
@@ -56,15 +56,15 @@ See the [public evidence bundle](../evidence/testnet-cycles-export-v1.json) and 
 
 ## Links to fill before submission
 
-- Public GitHub repository: pending publication approval.
+- Public GitHub repository: [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor).
 - Demo: local walkthrough and screenshot are available; a shareable recording or hosted demo link is pending.
 - X posts: 2–3 published links tagging `@DreamDEXSomnia` are pending verification/publication approval.
 - Team/contact and registration reward wallet: confirm in the actual form; do not substitute a bot wallet automatically.
 
 ## Suggested X copy — unpublished drafts
 
-1. Building OrderAnchor for @DreamDEXSomnia: a local tool that journals transaction identity before broadcast, recovers an uncertain Perps operation by its original hash after restart, and exports public evidence. Built for bot developers debugging RPC timeouts. [Add repository link]
-2. OrderAnchor testnet demo: POST_ONLY place, locally hidden RPC response, process termination, restart, recovery of the original hash, then cancellation. No second placement in the tested cycle. Public receipts and verification included. @DreamDEXSomnia [Add evidence/demo link]
-3. A receipt is only part of the story. OrderAnchor checks order state and scoped nonce history, and gates continuation on fresh completion evidence. Local English UI, portable public proofs and 53 passing tests. @DreamDEXSomnia [Add repository link]
+1. Building OrderAnchor for @DreamDEXSomnia: a local tool that journals transaction identity before broadcast, recovers an uncertain Perps operation by its original hash after restart, and exports public evidence. Built for bot developers debugging RPC timeouts. https://github.com/Seranov67/OrderAnchor
+2. OrderAnchor testnet demo: POST_ONLY place, locally hidden RPC response, process termination, restart, recovery of the original hash, then cancellation. No second placement in the tested cycle. Public receipts and verification included. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor/blob/main/docs/DEMO.md
+3. A receipt is only part of the story. OrderAnchor checks order state and scoped nonce history, and gates continuation on fresh completion evidence. Local English UI, portable public proofs and 53 passing tests. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor
 
 These are drafts, not evidence of published posts. Check final lengths after replacing placeholders.
