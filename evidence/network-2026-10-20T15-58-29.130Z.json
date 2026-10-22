@@ -1,0 +1,86 @@
+{
+  "startedAt": "2026-10-20T15:58:29.130Z",
+  "completedAt": "2026-10-20T15:58:46.837Z",
+  "node": "v22.17.1",
+  "outcome": {
+    "websocket": {
+      "ok": true,
+      "chainId": "0xc4cf",
+      "scope": "RPC request over WebSocket; subscription recovery not tested"
+    },
+    "indexer": {
+      "ok": true,
+      "typename": "query_root",
+      "scope": "Root query only; market and account queries not verified"
+    },
+    "gasPrice": {
+      "ok": true,
+      "wei": "6000000000"
+    },
+    "httpChain": {
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    }
+  },
+  "records": [
+    {
+      "at": "2026-10-20T15:58:29.132Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_chainId",
+        "params": []
+      },
+      "status": 200,
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":\"0xc4cf\"}"
+    },
+    {
+      "at": "2026-10-20T15:58:29.180Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_gasPrice",
+        "params": []
+      },
+      "status": 200,
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":\"0x165a0bc00\"}"
+    },
+    {
+      "at": "2026-10-20T15:58:29.182Z",
+      "url": "https://hideki-dev.smk.somnia.host/v1/graphql",
+      "request": {
+        "query": "{ __typename }"
+      },
+      "status": 200,
+      "body": "{\"data\":{\"__typename\":\"query_root\"}}"
+    },
+    {
+      "at": "2026-10-20T15:58:29.183Z",
+      "url": "wss://api.hideki2.infra.testnet.somnia.network/ws",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "eth_chainId",
+        "params": []
+      },
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":\"0xc4cf\"}"
+    },
+    {
+      "at": "2026-10-20T15:58:31.814Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "eth_getBlockByNumber",
+        "params": [
+          "latest",
+          false
+        ]
+      },
+      "status": 200,
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+let operations=[],selected=null,token='',working=false;
+const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+const short=s=>s?`${s.slice(0,8)}…${s.slice(-6)}`:'—';
+const date=s=>new Date(s).toLocaleString('en-GB');
+function message(text,error=false){const n=document.querySelector('#message');n.textContent=text;n.className=error?'error':'';}
+function row(label,value,cls){const r=el('div',undefined,'row');r.append(el('span',label),el('div',String(value??'—'),`value ${cls??''}`));return r;}
+function render(){
+  const list=document.querySelector('#operations');list.replaceChildren();document.querySelector('#count').textContent=String(operations.length);
+  for(const op of operations){const b=el('button',undefined,`op ${op.id===selected?'active':''}`);b.type='button';b.disabled=working;b.setAttribute('aria-pressed',String(op.id===selected));b.append(el('strong',op.label),el('small',`ETH-PERP · ${op.cycle.intent.isBid?'BUY':'SELL'} · ${Number(op.cycle.intent.quantity)/1e18} ETH`),el('span',op.observation.status,`tag ${op.observation.status==='VERIFIED'?'':'warn'}`));b.onclick=()=>{selected=op.id;render();};list.append(b);}
+  const op=operations.find(o=>o.id===selected);if(!op)return;
+  const d=document.querySelector('#detail');d.replaceChildren();const o=op.observation,r=o.result,c=op.cycle;
+  const head=el('div',undefined,'detail-head'),title=el('div');title.append(el('p','OPERATION / ETH-PERP','eyebrow'),el('h2',op.label),el('div',op.id,'hash'));head.append(title,el('span',o.status,`tag ${o.status==='VERIFIED'?'':'warn'}`));d.append(head);
+  d.append(el('p',`Saved observation · ${date(o.at)}. Click “Recover via RPC” to check the current state.`,'timestamp'));
+  if(!op.journalAvailable)d.append(el('p','The private journal is unavailable or busy. Public evidence is shown; this is not a fresh database read.','muted'));
+  const actions=el('div',undefined,'actions'),recover=el('button',working?'Checking RPC…':'Recover via RPC');recover.type='button';recover.disabled=working;recover.onclick=()=>refresh(op.id);
+  const exp=el('a','Export JSON ↓','button secondary');exp.href=`/api/export?id=${encodeURIComponent(op.id)}`;exp.download='orderanchor.json';actions.append(recover,exp);d.append(actions);
+  if(o.reason)d.append(el('p',o.reason,'muted'));
+  const metrics=el('div',undefined,'metrics');for(const [label,value] of [['Order state',o.status==='VERIFIED'?r?.state:'Unverified'],['Filled / remaining',o.status==='VERIFIED'?`${r?.filled??'—'} / ${r?.remaining??'—'}`:'—'],['Duplicate check',o.status==='VERIFIED'&&r?.duplicatePlace?.mined===false?'No duplicate found':'Unverified']]){const m=el('div',undefined,'metric');m.append(el('small',label),el('strong',value));metrics.append(m);}d.append(metrics);
+  const tx=el('div',undefined,'block');tx.append(el('h3','TRANSACTIONS'),row('Place hash',c.place.hash,'hash'),row('Cancel hash',c.cancel.hash,'hash'),row('Order ID',c.orderId,'hash'),row('Owner',c.intent.owner,'hash'),row('Bot signer',c.intent.signer,'hash'),row('Price / quantity',`${Number(c.intent.price)/1e18} USDso / ${Number(c.intent.quantity)/1e18} ETH`));d.append(tx);
+  const checks=el('div',undefined,'block');checks.append(el('h3','VERIFIED CHECKS'));
+  if(o.status==='VERIFIED'){for(const text of ['Transaction hashes recomputed; signer recovered','Receipts match RPC and canonical blocks','Order cancelled; fills and remaining quantity verified']){const p=el('div',undefined,'checks');p.append(el('span','✓','check'),el('span',text));checks.append(p);}checks.append(el('p',`Nonce ${r?.duplicatePlace?.nonceBefore??'—'} → ${r?.duplicatePlace?.nonceAfter??'—'}. No additional mined transaction by this signer was found within this cycle’s block interval.`,'muted'));}else checks.append(el('p','No fresh confirmation. A saved status does not replace a successful RPC check.','muted'));d.append(checks);
+  const journal=el('div',undefined,'block');journal.append(el('h3','LOCAL JOURNAL'));const ul=el('ul',undefined,'journal');for(const event of op.journal?.events??[]){const li=el('li');li.append(el('span',event.type),el('time',date(event.at)));ul.append(li);}journal.append(ul);d.append(journal);
+}
+async function load(){const response=await fetch('/api/operations');if(!response.ok)throw new Error('Could not load operations');const data=await response.json();token=data.token;operations=data.operations;selected=selected??operations[0]?.id;render();}
+async function refresh(id){working=true;render();message('Reading transactions, receipts, order state, and historical nonces…');try{const response=await fetch(`/api/recover/${encodeURIComponent(id)}`,{method:'POST',headers:{'X-OrderAnchor-Token':token}});const result=await response.json();await load();message(result.status==='VERIFIED'?'State recovered via RPC. No new transactions were sent.':result.reason??result.error??'Verification is incomplete.',!response.ok);}catch{message('Connection interrupted. The outcome is unverified; reload the operation list before retrying.',true);}finally{working=false;render();}}
+load().then(()=>message('Operations loaded. Showing saved verification results.')).catch(error=>message(error.message,true));

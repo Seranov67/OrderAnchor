@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-22T16:22:58.989Z",
+  "networkWrites": 0,
+  "localReleaseCommits": 0,
+  "results": [
+    {
+      "id": "orderanchor-first-20261022",
+      "eligible": false,
+      "committed": false,
+      "reason": "No fresh completion proof: account exposure, signer nonce, RPC or canonicality must be checked; lock remains active."
+    },
+    {
+      "id": "orderanchor-crash-20261022",
+      "eligible": true,
+      "committed": false,
+      "proof": {
+        "id": "orderanchor-crash-20261022",
+        "chainId": 50383,
+        "owner": "0xCf0a0858C6F6e81e553E580af6617aa128E96533",
+        "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+        "pool": "0xD6Cb1DD58580B84D76068aC21594219ce03aeddf",
+        "placeHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+        "cancelHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+        "orderId": "5331109037302068704547",
+        "state": "CANCELLED",
+        "filled": "0",
+        "remaining": "0",
+        "position": "0",
+        "lockedCollateral": "0",
+        "activePools": 0,
+        "nextNonce": 4,
+        "pendingNonce": 4,
+        "blockNumber": "30341265",
+        "blockHash": "0x8013ae3dccf1f4665ec82bcfb47db92c13fcbc92c6676f8a3ee61eb48d538ac3",
+        "checkedAt": 1792686178982
+      }
+    }
+  ]
+}

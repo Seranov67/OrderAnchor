@@ -1,0 +1,525 @@
+{
+  "at": "2026-10-22T15:56:19.818Z",
+  "chainId": 50383,
+  "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+  "preflight": {
+    "at": "2026-10-22T15:56:16.257Z",
+    "chainId": 50383,
+    "owner": "0xCf0a0858C6F6e81e553E580af6617aa128E96533",
+    "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+    "block": {
+      "number": "30325622",
+      "hash": "0x0e687496f0946074183b57521c4a6eaee89de2c7a44884b98e651e4f37f993fe"
+    },
+    "signerSTT": "4.98485825",
+    "ownerSTT": "15",
+    "nonceLatest": 2,
+    "noncePending": 2,
+    "selectors": {
+      "place": "0x80054449",
+      "cancel": "0xe37b444b"
+    },
+    "permissions": {
+      "place": true,
+      "cancel": true
+    },
+    "market": {
+      "at": "2026-10-22T15:56:14.118Z",
+      "chainId": 50383,
+      "sdkVersion": "0.32.1",
+      "marketsCount": 21,
+      "market": {
+        "id": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+        "poolAddress": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+        "lastPrice": "2396660000000000000000",
+        "lastTradeAt": "1792684545",
+        "cumulativeBaseVolume": "198910278200000000000000",
+        "cumulativeQuoteVolume": "483823686690164000000000000",
+        "tradeCount": "208722",
+        "baseDecimals": 18,
+        "quoteDecimals": 18,
+        "createdAtTimestamp": "1789666704",
+        "createdAtBlock": "202552",
+        "marketType": "PERP",
+        "baseToken": "0x1516ccebca301d0651bc27dcdf9b1c2f18c3b4cd",
+        "quoteToken": "0xed7993a74dae1e6656b704a424dcd8711aaf4f72",
+        "baseSymbol": "ETH",
+        "quoteSymbol": "USDso",
+        "baseIsNative": false,
+        "tickSize": "10000000000000000",
+        "lotSize": "100000000000000",
+        "minQuantity": "4000000000000000",
+        "marginBank": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+        "initialMarginBps": 500,
+        "stopRegistry": "0x44bfa5b28684e8d2156d15b85902da18f02b3a34",
+        "markPrice": "2396504856684662000000",
+        "markPriceUpdatedAt": "1792682358",
+        "fundingRate": "100000000000000",
+        "cumulativeFundingPerUnit": "19024626594063285084490009057074812500",
+        "indexPrice": "2396714449944731000000",
+        "fundingUpdatedAt": "1792682358",
+        "fundingWindowSec": 28800,
+        "fundingIntervalSec": 3600,
+        "openInterest": "889431700000000000000",
+        "openInterestUpdatedAt": "1792684545",
+        "chainId": 50383
+      },
+      "system": {
+        "marginBank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+        "collateralToken": "0xed7993A74dAe1e6656B704A424DcD8711aAf4F72",
+        "perpPoolFactory": "0xE631fAEE547baeE07353E290f0562ea67d856560",
+        "liquidationEngine": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+        "insuranceFund": "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+        "feeRecipient": "0xd58596620Ee6951B2958a931949e4ff7ce6222be",
+        "maxLeverageLimit": 20,
+        "fullyWired": true
+      },
+      "registered": true,
+      "snapshot": {
+        "blockNumber": "30325609",
+        "blockHash": "0x19696590392ab8d6fc69126e46a2568c6f275028c1e6efd346384c8f51464899",
+        "parameters": {
+          "tickSize": "10000000000000000",
+          "minQuantity": "4000000000000000",
+          "lotSize": "100000000000000"
+        },
+        "mark": {
+          "priceable": true,
+          "price": "2396553181787251000000"
+        },
+        "bank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+        "codeBytes": 321
+      },
+      "limits": [
+        "SDK discovery/system/registration reads are not pinned to the HTTP snapshot block",
+        "No owner, signer, margin, permissions, gas estimate, simulation or live transaction tested"
+      ]
+    },
+    "account": {
+      "owner": "0xCf0a0858C6F6e81e553E580af6617aa128E96533",
+      "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+      "pool": "0xD6Cb1DD58580B84D76068aC21594219ce03aeddf",
+      "marginBank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+      "maximum": {
+        "priceable": true,
+        "asOfBlock": "30325636",
+        "maxQuantity": "8784500000000000000",
+        "unalignedMaxQuantity": "8784567272216170631",
+        "increasingQuantity": "8784500000000000000",
+        "reducingQuantity": "0",
+        "lockAmount": "999992342000000000000",
+        "topUpRequired": "0",
+        "wallet": null,
+        "fundingPayer": null,
+        "mainWalletCapacity": null,
+        "ownWalletPull": "0",
+        "mainWalletPull": "0",
+        "mainFundingBlocked": false,
+        "placeable": true,
+        "limitedBy": "collateral",
+        "lotSize": "100000000000000",
+        "minQuantity": "4000000000000000",
+        "maxPositionSize": "399561200000000000000",
+        "positionSize": "0",
+        "markPrice": "2396443167663064000000",
+        "effectiveImfBps": "500"
+      },
+      "margin": {
+        "unlockedCollateralBalance": "1000000000000000000000",
+        "lockedCollateral": "0",
+        "activePerpPools": [],
+        "equity": "1000000000000000000000",
+        "withdrawable": "0",
+        "imReq": "0",
+        "mmReq": "0",
+        "cmReq": "0",
+        "marginStatus": "Healthy",
+        "asOfBlock": "30325636"
+      },
+      "position": {
+        "size": "0",
+        "avgEntryPrice": "0",
+        "entryFundingIndex": "0",
+        "lastUpdatedTimestampNs": "0"
+      },
+      "permissions": {
+        "placeAllowed": true,
+        "cancelAllowed": true
+      },
+      "sizeAccepted": true,
+      "liveSendReady": false,
+      "remainingChecks": [
+        "Fresh consistent chain reads",
+        "Signer gas balance and fee/gas ceiling",
+        "Exact call simulation",
+        "Durable transaction commit"
+      ]
+    },
+    "intent": {
+      "id": "orderanchor-first-20261022",
+      "chainId": 50383,
+      "owner": "0xCf0a0858C6F6e81e553E580af6617aa128E96533",
+      "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+      "pool": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "isBid": true,
+      "price": "2276720000000000000000",
+      "quantity": "4000000000000000",
+      "expireTimestampNs": "1792685480000000000"
+    },
+    "human": {
+      "market": "ETH-PERP",
+      "side": "BUY",
+      "type": "POST_ONLY",
+      "price": "2276.72",
+      "quantity": "0.004",
+      "notionalUSDso": "9.10688"
+    },
+    "signed": false,
+    "broadcast": false,
+    "status": "SIMULATED_NOT_SIGNED",
+    "simulation": {
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000012100000000007e74f2"
+    },
+    "gasEstimate": "2671054",
+    "gasLimit": "3338817",
+    "fees": {
+      "maxFeePerGas": "7200000000",
+      "maxPriorityFeePerGas": "0"
+    },
+    "gasCostCeilingSTT": "0.0240394824",
+    "limitations": [
+      "SDK account/size reads and market discovery are not one atomic block snapshot",
+      "Cancel permission checked, cancellation simulation requires an actual orderId",
+      "Candidate expires 15 minutes after snapshot; rerun fresh checks before signing",
+      "No transaction signed or sent; POST_ONLY can still fill after resting"
+    ]
+  },
+  "placeGas": {
+    "gas": "3368818",
+    "maxFeePerGas": "7200000000",
+    "maxPriorityFeePerGas": "0"
+  },
+  "place": {
+    "id": "orderanchor-crash-20261022",
+    "intent": {
+      "id": "orderanchor-crash-20261022",
+      "chainId": 50383,
+      "owner": "0xCf0a0858C6F6e81e553E580af6617aa128E96533",
+      "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+      "pool": "0xD6Cb1DD58580B84D76068aC21594219ce03aeddf",
+      "isBid": true,
+      "price": "2276720000000000000000",
+      "quantity": "4000000000000000",
+      "expireTimestampNs": "1792685480000000000"
+    },
+    "state": "CONFIRMED",
+    "hash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+    "nonce": 2,
+    "orderId": "5331109037302068704547"
+  },
+  "childPid": 21424,
+  "placeSendAttempts": 1,
+  "fault": {
+    "kind": "accepted-response-hidden-then-SIGKILL",
+    "acceptedHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+    "executorState": "UNKNOWN",
+    "at": "2026-10-22T15:56:23.172Z"
+  },
+  "status": "COMPLETE",
+  "restart": {
+    "pid": 24672,
+    "priorPid": 21424,
+    "persistedState": "UNKNOWN",
+    "persistedHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+    "placeBroadcastsDuringRecovery": 0
+  },
+  "placeEvidence": {
+    "transaction": {
+      "hash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+      "from": "0xa50a0cc153807a86e55a613f327be6752cdeb389",
+      "to": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "input": "0x80054449000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e965330000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b6bd6496ba3580000000000000000000000000000000000000000000000000000000e35fa931a000000000000000000000000000000000000000000000000000018e0e5f22d6690000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 2,
+      "chainId": 50383,
+      "value": "0"
+    },
+    "receipt": {
+      "transactionHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+      "transactionIndex": 2,
+      "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+      "blockNumber": "30325711",
+      "from": "0xa50a0cc153807a86e55a613f327be6752cdeb389",
+      "to": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "cumulativeGasUsed": "8484225",
+      "gasUsed": "1129234",
+      "contractAddress": null,
+      "type": "eip1559",
+      "status": "success",
+      "logsBloom": "0x00000000010000000000000200020000000000000100000000000000000000000000004000000000000000040000000000000000000000000000000000000000000100100000000000008000000000000001000010000000000000000000000000200000000000000000000000000000000000000000000200000000000000000010000000000000000000000000000000000000000000000000080000000000000000000080000000000000000000000000000000000000002000000080000000000000000004000000000000000000000000000000000000000000000000000000010040000040000000000000000000000000000000000800000008000000",
+      "logs": [
+        {
+          "address": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+          "topics": [
+            "0x9d952b9056b1ad31790d622a7f5ecf49004b370b41add0e429ac1e9f4b8a3335",
+            "0x000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e96533",
+            "0x000000000000000000000000d6cb1dd58580b84d76068ac21594219ce03aeddf"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000651b4f49a9b0000",
+          "blockNumber": "30325711",
+          "transactionHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+          "transactionIndex": 2,
+          "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+          "logIndex": 30,
+          "removed": false
+        },
+        {
+          "address": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+          "topics": [
+            "0xd90f62f61ee2f606b132cfdfd883ddd079228b6fd6bffd9d7cf848daf824639d",
+            "0x00000000000000000000000000000000000000000000012100000000007e7523"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000012100000000007e75230000000000000000000000000000000000000000000000000000000000000001000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e96533000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b6bd6496ba3580000000000000000000000000000000000000000000000000000000e35fa931a0000000000000000000000000000000000000000000000000000000e35fa931a000000000000000000000000000000000000000000000000000018e0e5f22d669000",
+          "blockNumber": "30325711",
+          "transactionHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+          "transactionIndex": 2,
+          "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+          "logIndex": 31,
+          "removed": false
+        },
+        {
+          "address": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+          "topics": [
+            "0xcdd45acd62788abc10f79d86fac34df2a63e1a3b20f061c5bcf431ff6a09b866",
+            "0x00000000000000000000000000000000000000000000012100000000007e7523"
+          ],
+          "data": "0x",
+          "blockNumber": "30325711",
+          "transactionHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+          "transactionIndex": 2,
+          "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+          "logIndex": 32,
+          "removed": false
+        }
+      ],
+      "effectiveGasPrice": "6000000000"
+    },
+    "head": "30325992",
+    "canonicalBlockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824"
+  },
+  "afterPlace": {
+    "id": "orderanchor-crash-20261022",
+    "orderId": "5331109037302068704547",
+    "state": "OPEN",
+    "filled": "0",
+    "remaining": "4000000000000000",
+    "blockNumber": "30325999",
+    "blockHash": "0xea82882e1d8e9b1085fe6c8115b186177ffbe2b71ff5334f47c8e0102efa07fa",
+    "canCancel": true,
+    "terminalVerified": false
+  },
+  "cancelPlan": {
+    "parentId": "orderanchor-crash-20261022",
+    "orderId": "5331109037302068704547",
+    "chainId": 50383,
+    "signer": "0xa50a0cC153807a86e55A613f327Be6752CdeB389",
+    "call": {
+      "to": "0xD6Cb1DD58580B84D76068aC21594219ce03aeddf",
+      "value": "0",
+      "data": "0xe37b444b000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e9653300000000000000000000000000000000000000000000012100000000007e7523"
+    },
+    "nonce": 3,
+    "gas": "1585724",
+    "maxFeePerGas": "7200000000",
+    "maxPriorityFeePerGas": "0",
+    "costCeilingSTT": "0.0114172128",
+    "lifecycle": {
+      "id": "orderanchor-crash-20261022",
+      "orderId": "5331109037302068704547",
+      "state": "OPEN",
+      "filled": "0",
+      "remaining": "4000000000000000",
+      "blockNumber": "30326035",
+      "blockHash": "0xc51c99e56ef1eff6d0d06de09962f64ab24124c346ac6dd14b3485df807413ef",
+      "canCancel": true,
+      "terminalVerified": false
+    },
+    "signed": false,
+    "broadcast": false,
+    "warning": "Revalidate before signing. Remaining can fill between read and cancellation; receipt and lifecycle read-back are mandatory."
+  },
+  "cancel": {
+    "parentId": "orderanchor-crash-20261022",
+    "orderId": "5331109037302068704547",
+    "state": "CONFIRMED",
+    "hash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+    "nonce": 3
+  },
+  "cancelEvidence": {
+    "transaction": {
+      "hash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+      "from": "0xa50a0cc153807a86e55a613f327be6752cdeb389",
+      "to": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "input": "0xe37b444b000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e9653300000000000000000000000000000000000000000000012100000000007e7523",
+      "nonce": 3,
+      "chainId": 50383,
+      "value": "0"
+    },
+    "receipt": {
+      "transactionHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+      "transactionIndex": 0,
+      "blockHash": "0x45f4c3e4477c394c902001766767877eec4693d449b396b3bf40869c53c130d1",
+      "blockNumber": "30326076",
+      "from": "0xa50a0cc153807a86e55a613f327be6752cdeb389",
+      "to": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+      "cumulativeGasUsed": "179053",
+      "gasUsed": "179053",
+      "contractAddress": null,
+      "type": "eip1559",
+      "status": "success",
+      "logsBloom": "0x00000000000000000000000000020000000000000100000000000000000000000008004000000000000000040000000000000000000000000000000000000000000100100000002000008000000000000001000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000400000000000000000000000010040000040000000000000000000000000000000000800000408000000",
+      "logs": [
+        {
+          "address": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+          "topics": [
+            "0x5c87c81b4945a78d177e7c3dfbc9a6eaa971757d39f3b93c514446b47b5a2e1a",
+            "0x000000000000000000000000cf0a0858c6f6e81e553e580af6617aa128e96533",
+            "0x000000000000000000000000d6cb1dd58580b84d76068ac21594219ce03aeddf"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000651b4f49a9b0000",
+          "blockNumber": "30326076",
+          "transactionHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+          "transactionIndex": 0,
+          "blockHash": "0x45f4c3e4477c394c902001766767877eec4693d449b396b3bf40869c53c130d1",
+          "logIndex": 0,
+          "removed": false
+        },
+        {
+          "address": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+          "topics": [
+            "0x06ff08ed6b6987bb7df963009d8b54dc03988f4e465c009924929bb010fe03e7",
+            "0x00000000000000000000000000000000000000000000012100000000007e7523"
+          ],
+          "data": "0x",
+          "blockNumber": "30326076",
+          "transactionHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+          "transactionIndex": 0,
+          "blockHash": "0x45f4c3e4477c394c902001766767877eec4693d449b396b3bf40869c53c130d1",
+          "logIndex": 1,
+          "removed": false
+        }
+      ],
+      "effectiveGasPrice": "6000000000"
+    },
+    "head": "30326088",
+    "canonicalBlockHash": "0x45f4c3e4477c394c902001766767877eec4693d449b396b3bf40869c53c130d1"
+  },
+  "finalOrder": {
+    "id": "orderanchor-crash-20261022",
+    "orderId": "5331109037302068704547",
+    "state": "CANCELLED",
+    "filled": "0",
+    "remaining": "0",
+    "blockNumber": "30326095",
+    "blockHash": "0x7e0673b6077f1d8862887f5182d48346572cc0d2245fd2e211ac7068fc6d12f7",
+    "canCancel": false,
+    "terminalVerified": true
+  },
+  "finalPosition": {
+    "size": "0",
+    "avgEntryPrice": "0",
+    "entryFundingIndex": "0",
+    "lastUpdatedTimestampNs": "0"
+  },
+  "finalMargin": {
+    "unlockedCollateralBalance": "1000000000000000000000",
+    "lockedCollateral": "0",
+    "activePerpPools": [],
+    "equity": "1000000000000000000000",
+    "withdrawable": "0",
+    "imReq": "0",
+    "mmReq": "0",
+    "cmReq": "0",
+    "marginStatus": "Healthy",
+    "asOfBlock": "30326133"
+  },
+  "finalSTTRaw": "4977008528000000000",
+  "events": [
+    {
+      "type": "SIGNED_COMMITTED",
+      "body": {
+        "hash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+        "nonce": 2
+      },
+      "at": "2026-10-22T15:56:22.900Z"
+    },
+    {
+      "type": "UNKNOWN",
+      "body": {
+        "hash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+        "phase": "broadcast-attempted"
+      },
+      "at": "2026-10-22T15:56:22.903Z"
+    },
+    {
+      "type": "CONFIRMED",
+      "body": {
+        "block": "30325711",
+        "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+        "orderId": "5331109037302068704547",
+        "fillEvents": 0,
+        "lifecycle": "current remaining still requires on-chain read"
+      },
+      "at": "2026-10-22T15:56:50.877Z"
+    },
+    {
+      "type": "CONFIRMED",
+      "body": {
+        "block": "30325711",
+        "blockHash": "0x26143907ac8f1fd78f97cb1766678a8f3dd56540cf2ac45c734cc6cb0424b824",
+        "orderId": "5331109037302068704547",
+        "fillEvents": 0,
+        "lifecycle": "current remaining still requires on-chain read"
+      },
+      "at": "2026-10-22T15:56:55.275Z"
+    },
+    {
+      "type": "CANCEL_SIGNED_COMMITTED",
+      "body": {
+        "hash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+        "nonce": 3,
+        "orderId": "5331109037302068704547"
+      },
+      "at": "2026-10-22T15:56:59.380Z"
+    },
+    {
+      "type": "CANCEL_UNKNOWN",
+      "body": {
+        "hash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+        "phase": "broadcast-attempted"
+      },
+      "at": "2026-10-22T15:56:59.383Z"
+    },
+    {
+      "type": "CANCEL_SUBMITTED",
+      "body": {
+        "hash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+        "reason": "accepted"
+      },
+      "at": "2026-10-22T15:56:59.648Z"
+    },
+    {
+      "type": "CANCEL_CONFIRMED",
+      "body": {
+        "reason": "Exact OrderCancelled confirmed; remaining/fills require lifecycle read-back"
+      },
+      "at": "2026-10-22T15:57:00.451Z"
+    }
+  ],
+  "duplicateCheck": {
+    "placeAttemptEvents": 1,
+    "latestNonce": 4,
+    "pendingNonce": 4,
+    "expectedAfterPlaceCancel": 4,
+    "placeHashUnchanged": true
+  }
+}

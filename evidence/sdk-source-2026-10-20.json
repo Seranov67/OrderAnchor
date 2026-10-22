@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-20T17:38:56.272Z",
+  "sdkVersion": "0.32.1",
+  "lockSha256": "9c2740f77fbd52243a84def758d8153df0416b229e34c28070fe2c19cdeee24b",
+  "packageIntegrity": "sha512-RfshQP8X6m/wrE6TocmiOPajbw/Vstmkvn+AP/ztK19QgcrPn1lR7A4Pp8xVm6MuOXOpBwTBrFO0W34neQF0Og==",
+  "files": [
+    {
+      "path": "src/config.ts",
+      "sha256": "99ea4f83890d9dc1e2b60033bcf731df536687dce9a741c3f3c6319ae5ec8fda"
+    },
+    {
+      "path": "src/executor/local.ts",
+      "sha256": "091d084cf9ed66c4c52cd0930a309965ca66463ccd76e19828c2b59034c283b5"
+    },
+    {
+      "path": "src/txSend.ts",
+      "sha256": "0b63fa20e669b8f30ff8a48f53dfae237ebf1ec65fa1a37aaa4a3284b9a58551"
+    },
+    {
+      "path": "src/errors.ts",
+      "sha256": "9caac77d7eb712c54280901a99f725ec41adbbfad412292cd98fb9614a2eb515"
+    },
+    {
+      "path": "src/tradeAbi.ts",
+      "sha256": "7948d58ba0ce6a7c6fb62d608a36aba8e8c750a6188265a3601df3f240f22f33"
+    },
+    {
+      "path": "src/decode/orders.ts",
+      "sha256": "402b6d07b8c38db6723cf80b822d0327ea098c04f0e1e871d70d455d62c51c53"
+    },
+    {
+      "path": "dist/index.d.ts",
+      "sha256": "09d97815f9437496bd49111cdab4ee10f773581bc463c3106500c6493cd9b270"
+    }
+  ],
+  "findings": [
+    "SDK local executor has an in-memory nonce lane and typed unknown outcome with hash",
+    "SDK sending verbs await receipt; no durable pre-broadcast callback on built-in local executor",
+    "Operator ABI is not in SDK perpPoolWriteAbi; sourced from pinned official MIT bot kit",
+    "Headless root import works without optional React/Reactivity peers"
+  ]
+}

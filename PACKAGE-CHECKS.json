@@ -1,0 +1,11 @@
+{
+  "typecheckExit": 0,
+  "nodeVersion": "v22.17.1",
+  "npmVersion": "10.9.2",
+  "publicUiSmoke": true,
+  "installExit": 0,
+  "testExit": 0,
+  "testsPassed": 53,
+  "originalPrivateJournalAbsent": true,
+  "newTransactionsSent": 0
+}

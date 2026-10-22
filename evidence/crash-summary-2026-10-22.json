@@ -1,0 +1,33 @@
+{
+  "child": 21424,
+  "restart": {
+    "pid": 24672,
+    "priorPid": 21424,
+    "persistedState": "UNKNOWN",
+    "persistedHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+    "placeBroadcastsDuringRecovery": 0
+  },
+  "duplicateCheck": {
+    "placeAttemptEvents": 1,
+    "latestNonce": 4,
+    "pendingNonce": 4,
+    "expectedAfterPlaceCancel": 4,
+    "placeHashUnchanged": true
+  },
+  "placeBlock": "30325711",
+  "cancelBlock": "30326076",
+  "gasCostSTT": 0.007849722,
+  "finalSTT": 4.977008528,
+  "margin": {
+    "unlockedCollateralBalance": "1000000000000000000000",
+    "lockedCollateral": "0",
+    "activePerpPools": [],
+    "equity": "1000000000000000000000",
+    "withdrawable": "0",
+    "imReq": "0",
+    "mmReq": "0",
+    "cmReq": "0",
+    "marginStatus": "Healthy",
+    "asOfBlock": "30326133"
+  }
+}

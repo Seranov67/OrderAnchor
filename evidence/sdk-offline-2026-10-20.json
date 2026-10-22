@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-20T17:38:56.272Z",
+  "runtime": "v22.17.1",
+  "versions": {
+    "sdk": "0.32.1",
+    "viem": "2.54.1",
+    "typescript": "5.9.3"
+  },
+  "sdkPeerDependencies": {
+    "@somnia-chain/reactivity": "^0.2.1",
+    "react": ">=18",
+    "viem": "^2.18.5"
+  },
+  "sdkOptionalPeers": {
+    "@somnia-chain/reactivity": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "lockSha256": "9c2740f77fbd52243a84def758d8153df0416b229e34c28070fe2c19cdeee24b",
+  "checks": {
+    "rootImport": true,
+    "postOnly": 3,
+    "placeSelector": "0x80054449",
+    "cancelSelector": "0xe37b444b",
+    "expectedPlaceSelector": "0x80054449",
+    "decodedFunction": "placeOrderFor",
+    "hashKnownBeforeNetwork": true,
+    "signerRecovered": true,
+    "sdkUnknownErrorRetainsHash": true,
+    "sdkPerpWriteFunctions": [
+      "placeOrder",
+      "cancelOrder",
+      "updateFunding",
+      "marginBank"
+    ]
+  },
+  "transactionHash": "0x5d31a7d8354d16997be8994444a1578d4ba1b8e0f45fbec815809cf33c80ab14",
+  "scope": "Offline expired synthetic call; ephemeral unfunded key in memory, no wallet, network transport or broadcast",
+  "limits": [
+    "Not a live simulation, permission/funding check or testnet execution",
+    "Typed imports and runtime signing do not prove every SDK endpoint"
+  ]
+}

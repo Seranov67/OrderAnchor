@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-20T17:31:41.128Z",
+  "chainId": 50383,
+  "sdkVersion": "0.32.1",
+  "marketsCount": 21,
+  "market": {
+    "id": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+    "poolAddress": "0xd6cb1dd58580b84d76068ac21594219ce03aeddf",
+    "lastPrice": "2444610000000000000000",
+    "lastTradeAt": "1792517495",
+    "cumulativeBaseVolume": "151528699800000000000000",
+    "cumulativeQuoteVolume": "367994004940509000000000000",
+    "tradeCount": "168107",
+    "baseDecimals": 18,
+    "quoteDecimals": 18,
+    "createdAtTimestamp": "1789666704",
+    "createdAtBlock": "202552",
+    "marketType": "PERP",
+    "baseToken": "0x1516ccebca301d0651bc27dcdf9b1c2f18c3b4cd",
+    "quoteToken": "0xed7993a74dae1e6656b704a424dcd8711aaf4f72",
+    "baseSymbol": "ETH",
+    "quoteSymbol": "USDso",
+    "baseIsNative": false,
+    "tickSize": "10000000000000000",
+    "lotSize": "100000000000000",
+    "minQuantity": "4000000000000000",
+    "marginBank": "0x478769e1177c0773c43a593dccc4ad15f15f1394",
+    "initialMarginBps": 500,
+    "stopRegistry": "0x44bfa5b28684e8d2156d15b85902da18f02b3a34",
+    "markPrice": "2447236331740602500000",
+    "markPriceUpdatedAt": "1792516758",
+    "fundingRate": "100000000000000",
+    "cumulativeFundingPerUnit": "18773644133533357075891379575151312500",
+    "indexPrice": "2448242265734429000000",
+    "fundingUpdatedAt": "1792516758",
+    "fundingWindowSec": 28800,
+    "fundingIntervalSec": 3600,
+    "openInterest": "819198100000000000000",
+    "openInterestUpdatedAt": "1792517495",
+    "chainId": 50383
+  },
+  "system": {
+    "marginBank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+    "collateralToken": "0xed7993A74dAe1e6656B704A424DcD8711aAf4F72",
+    "perpPoolFactory": "0xE631fAEE547baeE07353E290f0562ea67d856560",
+    "liquidationEngine": "0xA66d3C24Ad4a389d863846905D8173e1017e9F4D",
+    "insuranceFund": "0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80",
+    "feeRecipient": "0xd58596620Ee6951B2958a931949e4ff7ce6222be",
+    "maxLeverageLimit": 20,
+    "fullyWired": true
+  },
+  "registered": true,
+  "snapshot": {
+    "blockNumber": "28656030",
+    "blockHash": "0xdc132d6a596a0747b3d619015640d488fd41a8fe55c0afa49adcde6f240f3cd1",
+    "parameters": {
+      "tickSize": "10000000000000000",
+      "minQuantity": "4000000000000000",
+      "lotSize": "100000000000000"
+    },
+    "mark": {
+      "priceable": true,
+      "price": "2443108398573272000000"
+    },
+    "bank": "0x478769E1177C0773c43A593DCCc4Ad15F15F1394",
+    "codeBytes": 321
+  },
+  "limits": [
+    "SDK discovery/system/registration reads are not pinned to the HTTP snapshot block",
+    "No owner, signer, margin, permissions, gas estimate, simulation or live transaction tested"
+  ]
+}

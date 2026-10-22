@@ -1,0 +1,285 @@
+
+> orderanchor@0.1.0 test
+> node --import tsx --test test/*.test.ts
+
+TAP version 13
+# (node:7780) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: POST_ONLY operator payload and cancel encode exact official selectors
+ok 1 - POST_ONLY operator payload and cancel encode exact official selectors
+  ---
+  duration_ms: 81.1821
+  type: 'test'
+  ...
+# Subtest: hash and recovered signer are known locally; nonce changes hash
+ok 2 - hash and recovered signer are known locally; nonce changes hash
+  ---
+  duration_ms: 29.3219
+  type: 'test'
+  ...
+# Subtest: invalid input, wrong signer and altered payload are rejected
+ok 3 - invalid input, wrong signer and altered payload are rejected
+  ---
+  duration_ms: 13.5918
+  type: 'test'
+  ...
+# Subtest: signed transaction persists; same ID is idempotent and other unresolved intent blocked
+ok 4 - signed transaction persists; same ID is idempotent and other unresolved intent blocked
+  ---
+  duration_ms: 51.6881
+  type: 'test'
+  ...
+# Subtest: only one executor owns the database at a time
+ok 5 - only one executor owns the database at a time
+  ---
+  duration_ms: 10.0378
+  type: 'test'
+  ...
+# Subtest: missing/corrupt databases refuse to initialize silently
+ok 6 - missing/corrupt databases refuse to initialize silently
+  ---
+  duration_ms: 2.5143
+  type: 'test'
+  ...
+# Subtest: transport sees committed hash and UNKNOWN before send; lost response cannot be resent
+ok 7 - transport sees committed hash and UNKNOWN before send; lost response cannot be resent
+  ---
+  duration_ms: 19.6093
+  type: 'test'
+  ...
+# Subtest: closed store cannot reach the transport
+ok 8 - closed store cannot reach the transport
+  ---
+  duration_ms: 16.9401
+  type: 'test'
+  ...
+# Subtest: failed atomic state/event write rolls back and cannot reach transport
+ok 9 - failed atomic state/event write rolls back and cannot reach transport
+  ---
+  duration_ms: 19.6928
+  type: 'test'
+  ...
+# Subtest: RPC returning a different hash gives CONFLICT
+ok 10 - RPC returning a different hash gives CONFLICT
+  ---
+  duration_ms: 19.0947
+  type: 'test'
+  ...
+# Subtest: read-only resume validates canonical receipt and exact OrderPlaced
+ok 11 - read-only resume validates canonical receipt and exact OrderPlaced
+  ---
+  duration_ms: 22.3616
+  type: 'test'
+  ...
+# Subtest: null receipt and missing confirmations remain unknown
+ok 12 - null receipt and missing confirmations remain unknown
+  ---
+  duration_ms: 21.596
+  type: 'test'
+  ...
+# Subtest: receipt success without exact order identity is not lifecycle proof
+ok 13 - receipt success without exact order identity is not lifecycle proof
+  ---
+  duration_ms: 20.1288
+  type: 'test'
+  ...
+# Subtest: unavailable RPC does not present cached confirmation as a fresh read
+ok 14 - unavailable RPC does not present cached confirmation as a fresh read
+  ---
+  duration_ms: 20.0853
+  type: 'test'
+  ...
+# Subtest: malformed known fill event is unknown even when OrderPlaced is valid
+ok 15 - malformed known fill event is unknown even when OrderPlaced is valid
+  ---
+  duration_ms: 20.7124
+  type: 'test'
+  ...
+# Subtest: wrong target is conflict; changed block hash returns to unknown
+ok 16 - wrong target is conflict; changed block hash returns to unknown
+  ---
+  duration_ms: 23.1386
+  type: 'test'
+  ...
+# Subtest: actual child exits after fixture acceptance; new process state resumes without a send
+ok 17 - actual child exits after fixture acceptance; new process state resumes without a send
+  ---
+  duration_ms: 1925.6015
+  type: 'test'
+  ...
+# Subtest: actual child exits before send; resume observes but does not broadcast signed bytes
+ok 18 - actual child exits before send; resume observes but does not broadcast signed bytes
+  ---
+  duration_ms: 2067.7682
+  type: 'test'
+  ...
+# (node:5852) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: controlled fixture place -> durable cancel -> confirmed event -> terminal read-back
+ok 19 - controlled fixture place -> durable cancel -> confirmed event -> terminal read-back
+  ---
+  duration_ms: 131.2189
+  type: 'test'
+  ...
+# Subtest: lost cancel response survives reopen, blocks retry and new root place
+ok 20 - lost cancel response survives reopen, blocks retry and new root place
+  ---
+  duration_ms: 44.7788
+  type: 'test'
+  ...
+# Subtest: cancel is idempotent, rejects changed payload and nonce reuse
+ok 21 - cancel is idempotent, rejects changed payload and nonce reuse
+  ---
+  duration_ms: 59.5738
+  type: 'test'
+  ...
+# Subtest: missing order without terminal evidence remains unresolved
+ok 22 - missing order without terminal evidence remains unresolved
+  ---
+  duration_ms: 23.2634
+  type: 'test'
+  ...
+# Subtest: foreign cancel event does not prove this order cancelled; expiry is distinct
+ok 23 - foreign cancel event does not prove this order cancelled; expiry is distinct
+  ---
+  duration_ms: 23.2035
+  type: 'test'
+  ...
+# Subtest: partial fills are accounted for and full fill is not called cancellation
+ok 24 - partial fills are accounted for and full fill is not called cancellation
+  ---
+  duration_ms: 29.0195
+  type: 'test'
+  ...
+# Subtest: reorg, missing placement anchor and duplicate logs cannot establish terminal state
+ok 25 - reorg, missing placement anchor and duplicate logs cannot establish terminal state
+  ---
+  duration_ms: 23.291
+  type: 'test'
+  ...
+# Subtest: cancel receipt requires exact identity, confirmations and matching event
+ok 26 - cancel receipt requires exact identity, confirmations and matching event
+  ---
+  duration_ms: 33.0026
+  type: 'test'
+  ...
+# Subtest: schema v2 migrates without losing placement and durable lock
+ok 27 - schema v2 migrates without losing placement and durable lock
+  ---
+  duration_ms: 33.9979
+  type: 'test'
+  ...
+# Subtest: cancel planner only prepares after fresh lifecycle, permissions, nonce and gas checks
+ok 28 - cancel planner only prepares after fresh lifecycle, permissions, nonce and gas checks
+  ---
+  duration_ms: 35.5
+  type: 'test'
+  ...
+# Subtest: export is allowlisted and portable; parser validates integrity and ignores no extra fields
+ok 29 - export is allowlisted and portable; parser validates integrity and ignores no extra fields
+  ---
+  duration_ms: 109.1661
+  type: 'test'
+  ...
+# Subtest: edited hash, unsupported schema and duplicate cycles cannot pass schema validation
+ok 30 - edited hash, unsupported schema and duplicate cycles cannot pass schema validation
+  ---
+  duration_ms: 12.8184
+  type: 'test'
+  ...
+# Subtest: independent verifier recomputes both hashes and proves terminal zero-fill lifecycle
+ok 31 - independent verifier recomputes both hashes and proves terminal zero-fill lifecycle
+  ---
+  duration_ms: 32.0992
+  type: 'test'
+  ...
+# Subtest: RPC transaction signature/hash or intent modification fails
+ok 32 - RPC transaction signature/hash or intent modification fails
+  ---
+  duration_ms: 17.5391
+  type: 'test'
+  ...
+# Subtest: archived receipt corruption is caught against fresh RPC even with new bundle checksum
+ok 33 - archived receipt corruption is caught against fresh RPC even with new bundle checksum
+  ---
+  duration_ms: 24.8489
+  type: 'test'
+  ...
+# Subtest: receipt reorg or revert is not verified
+ok 34 - receipt reorg or revert is not verified
+  ---
+  duration_ms: 36.3313
+  type: 'test'
+  ...
+# Subtest: absent order without complete event history is not cancellation proof
+ok 35 - absent order without complete event history is not cancellation proof
+  ---
+  duration_ms: 37.8142
+  type: 'test'
+  ...
+# Subtest: extra nonce defeats duplicate-place claim
+ok 36 - extra nonce defeats duplicate-place claim
+  ---
+  duration_ms: 20.4759
+  type: 'test'
+  ...
+# Subtest: duplicate history logs and RPC unavailability fail closed
+ok 37 - duplicate history logs and RPC unavailability fail closed
+  ---
+  duration_ms: 20.9238
+  type: 'test'
+  ...
+# (node:1500) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: local UI: allowlisted views, export, request protection and read-only recovery
+    # Subtest: lists only public fields and marks unavailable journal
+    ok 1 - lists only public fields and marks unavailable journal
+      ---
+      duration_ms: 3.9114
+      type: 'test'
+      ...
+    # Subtest: exports a valid portable single-cycle bundle
+    ok 2 - exports a valid portable single-cycle bundle
+      ---
+      duration_ms: 15.0072
+      type: 'test'
+      ...
+    # Subtest: rejects hostile hosts, origins and missing tokens
+    ok 3 - rejects hostile hosts, origins and missing tokens
+      ---
+      duration_ms: 8.5799
+      type: 'test'
+      ...
+    # Subtest: serializes recovery and persists only derived observations
+    ok 4 - serializes recovery and persists only derived observations
+      ---
+      duration_ms: 36.0797
+      type: 'test'
+      ...
+    1..4
+ok 38 - local UI: allowlisted views, export, request protection and read-only recovery
+  ---
+  duration_ms: 133.0512
+  type: 'test'
+  ...
+# Subtest: raw quantities preserve differing base decimals, including NEAR 24
+ok 39 - raw quantities preserve differing base decimals, including NEAR 24
+  ---
+  duration_ms: 2.3917
+  type: 'test'
+  ...
+# Subtest: off-grid and under-minimum orders fail before any account/RPC checks
+ok 40 - off-grid and under-minimum orders fail before any account/RPC checks
+  ---
+  duration_ms: 0.5501
+  type: 'test'
+  ...
+1..40
+# tests 44
+# suites 0
+# pass 44
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6727.3106

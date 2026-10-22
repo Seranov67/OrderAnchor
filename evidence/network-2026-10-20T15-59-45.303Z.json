@@ -1,0 +1,94 @@
+{
+  "startedAt": "2026-10-20T15:59:45.303Z",
+  "completedAt": "2026-10-20T15:59:56.025Z",
+  "node": "v22.17.1",
+  "outcome": {
+    "indexer": {
+      "ok": true,
+      "typename": "query_root",
+      "scope": "Root query only; market and account queries not verified"
+    },
+    "gasPrice": {
+      "ok": true,
+      "wei": "6000000000"
+    },
+    "latestBlock": {
+      "ok": true,
+      "blockNumber": "28600978",
+      "blockHash": "0x9a35ad2e94f4e53d20cec779ec6763976d7a3fb233139cacbca45d7d4bd786e2",
+      "blockTime": "2026-10-20T15:59:54.000Z",
+      "ageSeconds": -2
+    },
+    "websocket": {
+      "ok": true,
+      "chainId": "0xc4cf",
+      "scope": "RPC request over WebSocket; subscription recovery not tested"
+    },
+    "httpChain": {
+      "ok": false,
+      "error": "fetch failed",
+      "cause": "ConnectTimeoutError: Connect Timeout Error (attempted address: api.hideki2.infra.testnet.somnia.network:443, timeout: 10000ms)"
+    }
+  },
+  "records": [
+    {
+      "at": "2026-10-20T15:59:45.305Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_chainId",
+        "params": []
+      },
+      "error": "fetch failed",
+      "cause": "ConnectTimeoutError: Connect Timeout Error (attempted address: api.hideki2.infra.testnet.somnia.network:443, timeout: 10000ms)"
+    },
+    {
+      "at": "2026-10-20T15:59:45.353Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_getBlockByNumber",
+        "params": [
+          "latest",
+          false
+        ]
+      },
+      "status": 200,
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"hash\":\"0x9a35ad2e94f4e53d20cec779ec6763976d7a3fb233139cacbca45d7d4bd786e2\",\"parentHash\":\"0x6296be5b8fdd726eaa8a469517f552f0bf7101156db626c91e5a6d7897845188\",\"sha3Uncles\":\"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\"miner\":\"0x0000000000000000000000000000000000000000\",\"stateRoot\":\"0xaa579d877b5500efc6dc71f9910f955f712aa45ac41d92c52661bdd874216c91\",\"transactionsRoot\":\"0x5c78cd0460e90c66193d5aacbf6f11298d07e70a6c04b8d0b01f4b0510b9c9f8\",\"receiptsRoot\":\"0x60893ca068682ad58cda7230761e5ffca9aabec7d3de6784c40330512abbd16b\",\"logsBloom\":\"0x00000000010000000028200200000000000000200100000000000008000000000009000000000080000000000000000040000000000000000000000000000000000000000000002000008400000000000100200034000000100020000000010000200000400004000000000008000000000000040000000000000000000000010010000000000040001000008100000200000000020000000000080000000000000000000080004000000000100000000100000010000000002000200000020080000000000004000000000000000000000001000000400000000000000004000000100010a01000000000100000000000020000100000000a00000400014400\",\"difficulty\":\"0x0\",\"number\":\"0x1b46a92\",\"gasLimit\":\"0x37e11d600\",\"gasUsed\":\"0x3fee45\",\"baseFeePerGas\":\"0x165a0bc00\",\"timestamp\":\"0x6ad78ffa\",\"size\":\"0x226\",\"extraData\":\"0x469d88534e56849b1b3a0937f33594897cb58cf80058446aa83c9ef3738146ff\",\"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"nonce\":\"0x0000000000000000\",\"transactions\":[\"0x0facf996fc05f518bd5f6472f3eef7932d11c88b1c338df2281a706cdb8a319f\",\"0x7270f7d30d5f437d62543ebb491da993d757b4261025c9c0c2464e7b91857385\",\"0xc93e57e68efffb02f92a3f1dffbbbef32b33c00f7ff7a15ec6e8452da5efa200\",\"0x3033f05ca05ce65fa8861447a15fa146bdf92ffe5d9b48dae4ef5c8a3934ac14\",\"0x3d91e555c33fb719066b11fa36cfa8b816563e45781ec53510a48cb79f977f8b\",\"0x402d64d25e805f8b55f229d1b6bcbe5036d5a919cbabf6c1b7199d2b563789da\",\"0xfd914c6ee0cff65d8adf3325d9742ab2e40bc118357e1084bf2034a7a243a313\"]}}"
+    },
+    {
+      "at": "2026-10-20T15:59:45.354Z",
+      "url": "https://api.hideki2.infra.testnet.somnia.network",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "eth_gasPrice",
+        "params": []
+      },
+      "status": 200,
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":\"0x165a0bc00\"}"
+    },
+    {
+      "at": "2026-10-20T15:59:45.355Z",
+      "url": "https://hideki-dev.smk.somnia.host/v1/graphql",
+      "request": {
+        "query": "{ __typename }"
+      },
+      "status": 200,
+      "body": "{\"data\":{\"__typename\":\"query_root\"}}"
+    },
+    {
+      "at": "2026-10-20T15:59:45.356Z",
+      "url": "wss://api.hideki2.infra.testnet.somnia.network/ws",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "eth_chainId",
+        "params": []
+      },
+      "body": "{\"jsonrpc\":\"2.0\",\"id\":4,\"result\":\"0xc4cf\"}"
+    }
+  ]
+}
