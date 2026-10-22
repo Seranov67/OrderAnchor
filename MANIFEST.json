@@ -213,8 +213,8 @@
     },
     {
       "path": "evidence/rpc-history-failure-diagnostic-2026-10-22.json",
-      "bytes": 287,
-      "sha256": "032643fc23a35e62002df84a0cb940b902e35343823b972d1e94de651b8de5e6"
+      "bytes": 278,
+      "sha256": "ad77c73de6afdedb251b8e75ce1d92ff81a8090d88d4df8eb86a906ce4d3657a"
     },
     {
       "path": "evidence/rpc-history-tests-2026-10-22.tap",
@@ -239,7 +239,7 @@
     {
       "path": "evidence/sdk-offline-2026-10-20.json",
       "bytes": 1313,
-      "sha256": "3e24464ecc3bb8684fd24fc560a71fcdc10d3660e4ad973a0eae14fb42891276"
+      "sha256": "6f2ba9d7cf14424dbc5e08e9833572a0e8d4eabf255c13a949bd7f9eb7ae232b"
     },
     {
       "path": "evidence/sdk-receipt-2026-10-20.json",
@@ -249,7 +249,7 @@
     {
       "path": "evidence/sdk-source-2026-10-20.json",
       "bytes": 1573,
-      "sha256": "0dbccae69774b08e10a241b1e3fd0da6e7a423095bef143c953cdb020558ef29"
+      "sha256": "c50a16cd295f8445a7fedcecbb3cf4c994bc2eb7ac7d61ff8d703c5a36146ff2"
     },
     {
       "path": "evidence/testnet-cycles-export-v1.json",
@@ -268,8 +268,8 @@
     },
     {
       "path": "media/demo-v2/DEMO-CHECKS.json",
-      "bytes": 883,
-      "sha256": "2149416c5eb7d65a70306bf8cb8465ca042fa27c312549c6ff2b271813e93f5b"
+      "bytes": 858,
+      "sha256": "08cffd1ff1399cfb6023b6704f140bfe8084f38ed0b91ffb6e6293e633f7a506"
     },
     {
       "path": "media/demo-v2/OrderAnchor-demo-en-v2.mp4",
@@ -278,23 +278,23 @@
     },
     {
       "path": "media/demo-v2/OrderAnchor-demo-en-v2.mp4.sha256",
-      "bytes": 94,
-      "sha256": "6ebdfe128305791f1c970f62cf122c9cf68f615471e09a6b424191a0c9464a9f"
+      "bytes": 93,
+      "sha256": "259b3eca1d777d2aafa873855d28c7825de38d829236fe0df5b8c3db17edeacd"
     },
     {
       "path": "media/demo-v2/OrderAnchor-demo-en.srt",
-      "bytes": 2341,
-      "sha256": "eaf653a0f7f7cea1cd1ba3e280ecf1f70faf611dd14773d9feae4a16ad811657"
+      "bytes": 2250,
+      "sha256": "3e6f31e464d4dd1dd0b61a61af76c127a88884f7f361b6a5821dd10937f14ec3"
     },
     {
       "path": "media/demo-v2/README.md",
-      "bytes": 2073,
-      "sha256": "37cc8ba5c7822cc14c0d43aff29c261b29e74752e9e345857588d950ad2e0579"
+      "bytes": 2051,
+      "sha256": "5442e4743c2928cfb8907b6535e569babe5aba54410b19c9e2754b1c9d714e52"
     },
     {
       "path": "media/demo-v2/TRANSCRIPT.md",
-      "bytes": 1871,
-      "sha256": "3aef0ce921ddfe0cf3ec2e55d5e83f4fbdd6782234164843134a3124a8d12c37"
+      "bytes": 1838,
+      "sha256": "3453f8661be4efca7f0348da84d7a9d053d9ae85fb5c07606b1e21af09355a9b"
     },
     {
       "path": "media/demo-v2/successful-recovery.png",
@@ -363,8 +363,8 @@
     },
     {
       "path": "scripts/sdk-spike.ts",
-      "bytes": 4626,
-      "sha256": "7db05e784a6758cf2f2658cd0cb5c5e9f52fbfb055c7f53c37c44c2bf0d0fcb8"
+      "bytes": 4692,
+      "sha256": "95d991aded88d7cd0dc3c7fcf39870bee5fc29c7aafc25defaa4f63954b19e87"
     },
     {
       "path": "src/cancel-plan.ts",

@@ -37,7 +37,8 @@ const sourceFiles = ['src/config.ts','src/executor/local.ts','src/txSend.ts','sr
 const provenance = {at:report.at,sdkVersion:sdk.version,lockSha256:report.lockSha256,packageIntegrity:JSON.parse(readFileSync('package-lock.json','utf8')).packages['node_modules/@somnia-chain/markets-sdk'].integrity as string,
   files:sourceFiles.map(path=>({path,sha256:createHash('sha256').update(readFileSync(`node_modules/@somnia-chain/markets-sdk/${path}`)).digest('hex')})),
   findings:['SDK local executor has an in-memory nonce lane and typed unknown outcome with hash','SDK sending verbs await receipt; no durable pre-broadcast callback on built-in local executor','Operator ABI is not in SDK perpPoolWriteAbi; sourced from pinned official MIT bot kit','Headless root import works without optional React/Reactivity peers']};
-mkdirSync('evidence', { recursive: true });
-writeFileSync('evidence/sdk-offline-2026-10-20.json', JSON.stringify(report,null,2)+'\n');
-writeFileSync('evidence/sdk-source-2026-10-20.json',JSON.stringify(provenance,null,2)+'\n');
+// Keep repeatable offline validation from overwriting archived public evidence.
+mkdirSync('tmp/sdk-spike', { recursive: true });
+writeFileSync('tmp/sdk-spike/offline.json', JSON.stringify(report,null,2)+'\n');
+writeFileSync('tmp/sdk-spike/source.json',JSON.stringify(provenance,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
