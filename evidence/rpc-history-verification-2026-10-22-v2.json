@@ -1,0 +1,66 @@
+{
+  "schema": "orderanchor-verification/v1",
+  "at": "2026-10-22T17:45:27.307Z",
+  "bundleSha256": "a15881255c99cc5f60b7ee6a2c42d13132e768886ff6468deeb32fa4365eff32",
+  "verified": true,
+  "results": [
+    {
+      "id": "orderanchor-first-20261022",
+      "status": "VERIFIED",
+      "placeHash": "0x27337193dbead091eeac8faa881561aeb01f978a7004e0f27e188b5d7b473793",
+      "cancelHash": "0xe3e312c7c830464bb7087a1a6acda21efd05cfb911fc0522cf9e836e63fa3006",
+      "orderId": "13004954571965242175743",
+      "hashRecomputed": true,
+      "signerRecovered": true,
+      "archivedReceiptsMatch": true,
+      "state": "CANCELLED",
+      "filled": "0",
+      "remaining": "0",
+      "duplicatePlace": {
+        "mined": false,
+        "fromBlock": "30323637",
+        "throughBlock": "30323737",
+        "nonceBefore": 0,
+        "nonceAfter": 2,
+        "scope": "This signer, inclusive place-to-cancel block interval; does not prove network send-attempt count"
+      },
+      "snapshot": {
+        "blockNumber": "30390848",
+        "blockHash": "0x6af587bbfc9a51c4e29b0e32d485a326032a1d49b953af251eaa1f5023a8374f"
+      },
+      "gasCostRaw": "15141750000000000"
+    },
+    {
+      "id": "orderanchor-crash-20261022",
+      "status": "VERIFIED",
+      "placeHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+      "cancelHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+      "orderId": "5331109037302068704547",
+      "hashRecomputed": true,
+      "signerRecovered": true,
+      "archivedReceiptsMatch": true,
+      "state": "CANCELLED",
+      "filled": "0",
+      "remaining": "0",
+      "duplicatePlace": {
+        "mined": false,
+        "fromBlock": "30325711",
+        "throughBlock": "30326076",
+        "nonceBefore": 2,
+        "nonceAfter": 4,
+        "scope": "This signer, inclusive place-to-cancel block interval; does not prove network send-attempt count"
+      },
+      "snapshot": {
+        "blockNumber": "30390981",
+        "blockHash": "0x5a08686f4629a959769b118cf7c38b3e75752abf98d3681b4b6ea1afe59366c1"
+      },
+      "gasCostRaw": "7849722000000000"
+    }
+  ],
+  "networkWrites": 0,
+  "limitations": [
+    "Fresh RPC is the trust source; not a cryptographic light-client consensus proof",
+    "SHA-256 detects changes, not author authenticity",
+    "Process kill/restart and send-attempt counts are local claims; chain proves mined transactions in the stated nonce/block interval"
+  ]
+}

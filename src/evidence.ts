@@ -64,7 +64,7 @@ export interface VerifierReads {
   head():Promise<bigint>;
   nonce(address:Hex,block:bigint):Promise<number>;
   order(pool:Hex,id:bigint,block:bigint):Promise<unknown|null>;
-  logs(pool:Hex,from:bigint,to:bigint):Promise<TransactionReceipt['logs']>;
+  logs(pool:Hex,from:bigint,to:bigint,orderId:bigint):Promise<TransactionReceipt['logs']>;
 }
 export class VerificationError extends Error {}
 const requireThat=(ok:unknown,message:string)=>{if(!ok)throw new VerificationError(message);};
@@ -105,7 +105,7 @@ export async function verifyCycle(c:CycleEvidence,rpc:VerifierReads) {
   requireThat(cancelled.length===1,'Exact cancellation event missing');
   const snapshot=head-1n;
   const snapshotBlock=await rpc.block(snapshot);
-  const [order,logs,beforeNonce,afterNonce]=await Promise.all([rpc.order(c.intent.pool,BigInt(c.orderId),snapshot),rpc.logs(c.intent.pool,pr.blockNumber,snapshot),rpc.nonce(c.intent.signer,pr.blockNumber-1n),rpc.nonce(c.intent.signer,cr.blockNumber)]);
+  const [order,logs,beforeNonce,afterNonce]=await Promise.all([rpc.order(c.intent.pool,BigInt(c.orderId),snapshot),rpc.logs(c.intent.pool,pr.blockNumber,snapshot,BigInt(c.orderId)),rpc.nonce(c.intent.signer,pr.blockNumber-1n),rpc.nonce(c.intent.signer,cr.blockNumber)]);
   let fills=0n,places=0,cancels=0;const seen=new Set<string>();
   for(const log of logs) {
     requireThat(log.address.toLowerCase()===c.intent.pool.toLowerCase()&&!log.removed&&log.blockNumber>=pr.blockNumber&&log.blockNumber<=snapshot,'Invalid history log');

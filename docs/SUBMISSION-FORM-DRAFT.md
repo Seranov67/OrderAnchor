@@ -28,7 +28,7 @@ The English local interface lets reviewers inspect operations, run read-only RPC
 
 We demonstrated two real ETH Perps POST_ONLY place-to-cancel cycles on Somnia Tokyo testnet, chain 50383. In the second cycle, a local wrapper hid an accepted RPC response and the executor process was terminated. A restarted process recovered the persisted hash without another placement, then cancelled the remaining order. Both cycles ended with zero fills, no remaining order quantity and zero position. Four transaction hashes and public verification reports are included.
 
-Conservative continuation guards require fresh completion evidence, zero exposure and the expected nonce before the next operation can proceed. The implementation has 53 passing tests covering recovery, cancellation, evidence verification and continuation guards. Live release of the demonstrated signer slot has not been committed.
+Conservative continuation guards require fresh completion evidence, zero exposure and the expected nonce before the next operation can proceed. The implementation has 63 passing local tests covering recovery, cancellation, evidence verification, indexed history reads and continuation guards. The public repository includes the indexed history fix, successful English demo v2 and fresh read-only evidence. Live release of the demonstrated signer slot has not been committed.
 
 OrderAnchor is built with TypeScript, Node.js, the markets SDK, viem and SQLite. Its repeat-use workflow is inspect, recover, verify and export for each uncertain operation. It is a local developer prototype, not a trading strategy or a mainnet service. Response loss was injected locally; this demonstration does not establish a universal exactly-once guarantee. RPC remains the source of chain facts, and continuation safety assumes one canonical journal and a dedicated signer. Somnia Reactivity and Somnia Agents are not used in this version.
 
@@ -57,7 +57,7 @@ See the [public evidence bundle](../evidence/testnet-cycles-export-v1.json) and 
 ## Links to fill before submission
 
 - Public GitHub repository: [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor).
-- Demo: local walkthrough and screenshot are available; a shareable recording or hosted demo link is pending.
+- Demo: [English video v2, 1m 38s](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4) · [Transcript, subtitles and evidence guide](https://github.com/Seranov67/OrderAnchor/blob/main/media/demo-v2/README.md).
 - X posts: 2–3 published links tagging `@DreamDEXSomnia` are pending verification/publication approval.
 - Team/contact and registration reward wallet: confirm in the actual form; do not substitute a bot wallet automatically.
 
@@ -65,6 +65,6 @@ See the [public evidence bundle](../evidence/testnet-cycles-export-v1.json) and 
 
 1. Building OrderAnchor for @DreamDEXSomnia: a local tool that journals transaction identity before broadcast, recovers an uncertain Perps operation by its original hash after restart, and exports public evidence. Built for bot developers debugging RPC timeouts. https://github.com/Seranov67/OrderAnchor
 2. OrderAnchor testnet demo: POST_ONLY place, locally hidden RPC response, process termination, restart, recovery of the original hash, then cancellation. No second placement in the tested cycle. Public receipts and verification included. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor/blob/main/docs/DEMO.md
-3. A receipt is only part of the story. OrderAnchor checks order state and scoped nonce history, and gates continuation on fresh completion evidence. Local English UI, portable public proofs and 53 passing tests. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor
+3. A receipt is only part of the story. OrderAnchor checks order state and scoped nonce history, and gates continuation on fresh completion evidence. Local English UI, portable public proofs and tested recovery guards. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor
 
 These are drafts, not evidence of published posts. Check final lengths after replacing placeholders.

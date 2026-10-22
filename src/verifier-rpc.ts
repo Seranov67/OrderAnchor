@@ -1,5 +1,7 @@
 import type {VerifierReads} from './evidence.ts';
 import {publicReader,readOnlyMarkets} from './read-only.ts';
+import {formatLog} from 'viem';
+import {readOrderHistory} from './order-history.ts';
 
 /** This adapter exposes no signing/broadcast method. */
 export function verifierReads() {
@@ -10,12 +12,10 @@ export function verifierReads() {
     async block(number){const b=await rpc.getBlock({blockNumber:number});return {hash:b.hash,number:b.number};},
     nonce:(address,block)=>rpc.getTransactionCount({address,blockNumber:block}),
     order:(pool,id,block)=>sdk.client.getOrderOnchain(pool,id,{blockNumber:block}),
-    async logs(pool,from,to){
-      if(to<from||to-from>1_000_000n)throw new Error('History range outside verifier bounds');
-      const all=[];
-      for(let start=from;start<=to;start+=1000n)all.push(...await rpc.getLogs({address:pool,fromBlock:start,toBlock:start+999n<to?start+999n:to}));
-      return all;
-    },
+    logs:(pool,from,to,orderId)=>readOrderHistory(async query=>{
+      const raw=await rpc.request({method:'eth_getLogs',params:[{address:query.address,fromBlock:`0x${query.fromBlock.toString(16)}`,toBlock:`0x${query.toBlock.toString(16)}`,topics:query.topics}]});
+      return raw.map(log=>formatLog(log)) as Awaited<ReturnType<VerifierReads['logs']>>;
+    },pool,from,to,orderId),
   };
   return {reads,async close(){clearTimeout(timer);abort.abort();await sdk.close();}};
 }

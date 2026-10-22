@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-20T17:38:56.272Z",
+  "at": "2026-10-22T18:00:14.394Z",
   "runtime": "v22.17.1",
   "versions": {
     "sdk": "0.32.1",
@@ -37,7 +37,7 @@
       "marginBank"
     ]
   },
-  "transactionHash": "0x5d31a7d8354d16997be8994444a1578d4ba1b8e0f45fbec815809cf33c80ab14",
+  "transactionHash": "0x8c811183e0997d9048f9ba278cf9395c35a78790fba912d3e484069f3568f93c",
   "scope": "Offline expired synthetic call; ephemeral unfunded key in memory, no wallet, network transport or broadcast",
   "limits": [
     "Not a live simulation, permission/funding check or testnet execution",

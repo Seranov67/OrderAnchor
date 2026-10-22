@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-22T17:48:09.112Z",
+  "status": "VERIFIED",
+  "result": {
+    "id": "orderanchor-crash-20261022",
+    "status": "VERIFIED",
+    "placeHash": "0xd7cd945ed7bc1792d71f101558c933679790bf7a3d650673851c7e3194b7a63b",
+    "cancelHash": "0x2d1ac08d99b7bac83fb84ba44a2c28346f2a03451cfb795aa89d346e05b01523",
+    "orderId": "5331109037302068704547",
+    "hashRecomputed": true,
+    "signerRecovered": true,
+    "archivedReceiptsMatch": true,
+    "state": "CANCELLED",
+    "filled": "0",
+    "remaining": "0",
+    "duplicatePlace": {
+      "mined": false,
+      "fromBlock": "30325711",
+      "throughBlock": "30326076",
+      "nonceBefore": 2,
+      "nonceAfter": 4,
+      "scope": "This signer, inclusive place-to-cancel block interval; does not prove network send-attempt count"
+    },
+    "snapshot": {
+      "blockNumber": "30392730",
+      "blockHash": "0xc91208a2b0ac695b8f2de57d58f803cd3afda38ee1feb2cd0c1b852395753d72"
+    },
+    "gasCostRaw": "7849722000000000"
+  }
+}

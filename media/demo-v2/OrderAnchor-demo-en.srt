@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:04,963
+OrderAnchor helps dream DEX Perps developers recover uncertain transactions by the
+
+2
+00:00:04,963 --> 00:00:10,288
+original hash, inspect the order outcome, and export verifiable evidence.
+
+3
+00:00:10,288 --> 00:00:15,287
+The interface shows two completed testnet cycles: normal placement and cancellation,
+
+4
+00:00:15,287 --> 00:00:20,645
+and recovery after locally injected response loss and process termination.
+
+5
+00:00:20,645 --> 00:00:26,405
+The crash journal records the signed transaction before sending, then an unknown outcome.
+
+6
+00:00:26,405 --> 00:00:30,720
+After restart, the original hash was recovered without another placement.
+
+7
+00:00:30,720 --> 00:00:33,827
+Cancellation completed the recorded cycle.
+
+8
+00:00:33,827 --> 00:00:37,467
+Now we click Recover via R P C.
+
+9
+00:00:37,467 --> 00:00:41,829
+This reads transactions, canonical receipts, order state, and historical nonces.
+
+10
+00:00:41,829 --> 00:00:44,960
+It sends no new transaction.
+
+11
+00:00:44,960 --> 00:00:49,480
+The fresh result confirms cancellation with zero filled and remaining quantity.
+
+12
+00:00:49,480 --> 00:00:51,466
+The placement hash is unchanged.
+
+13
+00:00:51,466 --> 00:00:57,183
+No additional mined signer transaction was found within this cycle's block interval.
+
+14
+00:00:57,183 --> 00:01:02,684
+Export J S O N downloads portable public evidence for one operation.
+
+15
+00:01:02,684 --> 00:01:05,360
+Export both cycles includes both demonstrations.
+
+16
+00:01:05,360 --> 00:01:10,770
+Neither export includes private keys or broadcastable signed transaction bytes.
+
+17
+00:01:10,770 --> 00:01:15,832
+The downloaded bundle can be checked independently without the private database.
+
+18
+00:01:15,832 --> 00:01:17,618
+Its checksum detects changes.
+
+19
+00:01:17,618 --> 00:01:23,927
+The verifier checks transaction identity, receipts, order events, and scoped nonce history.
+
+20
+00:01:23,927 --> 00:01:26,000
+OrderAnchor is available on GitHub.
+
+21
+00:01:26,000 --> 00:01:30,233
+This edited walkthrough uses real app captures and read only recovery.
+
+22
+00:01:30,233 --> 00:01:32,541
+The original fault was injected locally.
+
+23
+00:01:32,541 --> 00:01:37,724
+No new orders or cancellations were sent while making this demo.

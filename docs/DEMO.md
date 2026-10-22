@@ -6,6 +6,10 @@ An RPC timeout does not tell a trading bot whether its transaction landed. Blind
 
 This MVP targets dreamDEX Perps on Somnia testnet. It focuses on recovery and verifiable outcomes rather than a trading strategy.
 
+## Published video
+
+[English demo v2](../media/demo-v2/README.md) shows actual UI captures, successful fresh read-only recovery and public JSON export. The recording is approximately 1 minute 38 seconds with English narration, subtitles and a transcript. See the [RPC history fix](rpc-history-fix-2026-10-22.md) for the response-size issue resolved before recording v2.
+
 ## Three-minute walkthrough
 
 1. Run `npm.cmd run ui` and open http://127.0.0.1:4317.

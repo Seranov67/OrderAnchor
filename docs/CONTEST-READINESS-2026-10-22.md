@@ -22,7 +22,7 @@ MVP evaluation covers user value and credible scope, repeat-use/viral potential,
 1. Completed: published the verified v3 contents to [Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor) and added the repository link to the documentation.
 2. Review and publish 2–3 accurate X posts tagging @DreamDEXSomnia; place their actual links in README. Draft copy is in [the submission draft](SUBMISSION-FORM-DRAFT.md).
 3. Confirm submission whitelist access. If needed, the official instructions direct builders to [dreamDEX Discord](https://discord.gg/dreamdex) or [SomniaHacks Telegram](https://t.me/+s_oRMnGpOyQ3ODQ0) with their DoraHacks email. No message has been sent.
-4. Prepare a shareable English demo recording or link for judging. The local UI and walkthrough already work, but a localhost URL is not remotely accessible.
+4. Completed: [English demo v2 and public evidence](../media/demo-v2/README.md) are available from the repository. A hosted trading site is not needed to view the recording.
 5. Review organizer terms, confirm team/contact and the registration reward wallet, then inspect actual form fields and limits. The organizer disclaimer was read but not accepted; exact form requirements remain unconfirmed.
 6. The original v3 archive is preserved unchanged. Its exact contents are in the initial public commit; public-link documentation updates follow in Git. Rebuild a separately versioned archive if a new submission ZIP is needed.
 

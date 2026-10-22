@@ -5,7 +5,7 @@
   "publicUiSmoke": true,
   "installExit": 0,
   "testExit": 0,
-  "testsPassed": 53,
+  "testsPassed": 63,
   "originalPrivateJournalAbsent": true,
   "newTransactionsSent": 0
 }

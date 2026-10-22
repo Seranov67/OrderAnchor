@@ -6,6 +6,14 @@ Recover the outcome of a dreamDEX Perps operation after a lost RPC response or p
 
 OrderAnchor is a local prototype for developers who need to answer: **Did my transaction land, what happened to the order, and is it safe to continue?**
 
+## Demo video
+
+[Watch / download the English demo v2 (MP4, 1m 38s)](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4) · [Subtitles and transcript](media/demo-v2/README.md)
+
+[![Successful read-only recovery](media/demo-v2/successful-recovery.png)](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4)
+
+Fresh independent CLI verification confirms both recorded cycles; the UI confirms the crash cycle as **VERIFIED / CANCELLED, 0 filled / 0 remaining**. The demo is an edited walkthrough with genuine app captures and English narration. It rereads the existing transactions; no new orders or cancellations were sent while recording. [Fresh verification report](evidence/rpc-history-verification-2026-10-22-v2.json) · [UI observation](evidence/rpc-history-ui-recovery-2026-10-22-v2.json).
+
 ## Run the local demo
 
 Requires Node.js **22.17.1**. SDK **0.32.1** and viem **2.54.1** are pinned in the lockfile.
@@ -58,7 +66,7 @@ npm.cmd test
 npm.cmd run cli -- help
 ```
 
-The suite covers durable commits, restart recovery, cancellation, partial fills, evidence tampering, unavailable RPC, release guards, reorg halts and local API protections. The pinned Node version marks node:sqlite experimental.
+All 63 tests pass locally. The suite covers durable commits, restart recovery, cancellation, partial fills, evidence tampering, unavailable RPC, release guards, reorg halts and local API protections. Order history uses indexed order-ID queries for both maker and taker fills while retaining full block coverage. See the [RPC history fix and fresh verification](docs/rpc-history-fix-2026-10-22.md). The pinned Node version marks node:sqlite experimental.
 
 ## Reviewer materials
 
@@ -66,7 +74,8 @@ The suite covers durable commits, restart recovery, cancellation, partial fills,
 
 - [English demo and evidence guide](docs/DEMO.md)
 - [Public evidence for both cycles](evidence/testnet-cycles-export-v1.json)
-- [Independent verification results](evidence/testnet-cycles-verification-2026-10-22.json)
+- [Fresh verification after the RPC fix](evidence/rpc-history-verification-2026-10-22-v2.json)
+- [Original independent verification results](evidence/testnet-cycles-verification-2026-10-22.json)
 - [Crash/restart evidence](evidence/crash-cycle-2026-10-22.json)
 - [Safe-release dry-run](evidence/completion-check-2026-10-22.json)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)

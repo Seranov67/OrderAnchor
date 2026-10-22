@@ -1,0 +1,9 @@
+{
+  "observedError": {
+    "from": "30355711",
+    "to": "30356710",
+    "ms": 440,
+    "error": "HTTP response body exceeded the size limit."
+  },
+  "note": "Unfiltered ETH-PERP history read before the fix; 53,048 pool logs accumulated before failure. No blockchain writes."
+}

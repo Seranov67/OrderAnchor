@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {parseTransaction,encodeEventTopics,type Transaction,type TransactionReceipt} from 'viem';
+import {parseTransaction,encodeEventTopics,encodeAbiParameters,type Transaction,type TransactionReceipt} from 'viem';
+import {orderBookEventsAbi} from '@somnia-chain/markets-sdk';
 import {fixture,evidence,blockHash} from './fixtures/data.ts';
 import {signCall} from '../src/signing.ts';
 import {cancellationCall} from '../src/protocol.ts';
@@ -59,9 +60,17 @@ test('absent order without complete event history is not cancellation proof',asy
 test('extra nonce defeats duplicate-place claim',async()=>{
   const {cycle,rpc}=await setup();await assert.rejects(verifyCycle(cycle,{...rpc,async nonce(){return 10;}}),/Extra signer/);
 });
+
+test('maker and taker fills both prevent a zero-fill verification',async()=>{
+  const {cycle,rpc}=await setup();
+  for(const args of [{takerOrderId:123n,makerOrderId:456n},{takerOrderId:456n,makerOrderId:123n}]) {
+    const fill={...(await rpc.logs(cycle.intent.pool,100n,109n,123n))[0]!,logIndex:3,topics:encodeEventTopics({abi:orderBookEventsAbi,eventName:'OrderFilled',args}) as TransactionReceipt['logs'][number]['topics'],data:encodeAbiParameters([{type:'uint256'},{type:'uint256'},{type:'uint256'},{type:'uint256'}],[1n,0n,0n,2n])};
+    await assert.rejects(verifyCycle(cycle,{...rpc,async logs(pool,from,to,id){assert.equal(id,123n);return [...await rpc.logs(pool,from,to,id),fill];}}),/zero-fill/);
+  }
+});
 test('duplicate history logs and RPC unavailability fail closed',async()=>{
   const {cycle,rpc}=await setup();
-  await assert.rejects(verifyCycle(cycle,{...rpc,async logs(){const logs=await rpc.logs(cycle.intent.pool,100n,109n);return [...logs,...logs];}}),/Duplicate history/);
+  await assert.rejects(verifyCycle(cycle,{...rpc,async logs(){const logs=await rpc.logs(cycle.intent.pool,100n,109n,BigInt(cycle.orderId));return [...logs,...logs];}}),/Duplicate history/);
   await assert.rejects(verifyCycle(cycle,{...rpc,async transaction(){throw new Error('offline');}}),/offline/);
 });
 test('completion proof requires independent cycle verification and empty healthy account',async()=>{

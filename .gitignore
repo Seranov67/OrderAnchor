@@ -59,3 +59,11 @@ evidence/*
 submission/
 publication/
 dist/
+
+# Fresh read-only verification and demo v2 evidence.
+!evidence/rpc-history-verification-2026-10-22-v2.json
+!evidence/rpc-history-ui-recovery-2026-10-22-v2.json
+!evidence/demo-v2-cycles-export.json
+!evidence/demo-v2-crash-export.json
+!evidence/rpc-history-tests-2026-10-22.tap
+!evidence/rpc-history-failure-diagnostic-2026-10-22.json

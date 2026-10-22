@@ -34,6 +34,10 @@ The fault was locally injected after RPC acceptance, not a real provider outage.
 
 Release safety is scoped to one canonical database and dedicated signer. Mainnet, multi-user onboarding, automatic replacement/rebroadcast and portable private-state backups are outside this MVP. No claim of contest-wide uniqueness or accepted SDK bug is made.
 
+## Public demo and fresh verification
+
+The repository includes [English demo v2](../media/demo-v2/README.md), the [RPC history fix](rpc-history-fix-2026-10-22.md), [fresh independent verification for both cycles](../evidence/rpc-history-verification-2026-10-22-v2.json) and the [successful UI crash-cycle observation](../evidence/rpc-history-ui-recovery-2026-10-22-v2.json). The local regression suite has 63 passing tests. No new transactions were sent to prepare or publish these materials.
+
 ## Submission status
 
 OrderAnchor is published at [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor) from the verified v3 package. The contest form has not been submitted and X posts remain unpublished by this workflow. See the [requirements checked on 22 October 2026](CONTEST-READINESS-2026-10-22.md) and [English form draft](SUBMISSION-FORM-DRAFT.md). The public GitHub link is available; X-post links and submission whitelist access remain pending. Historical planning dates are not a statement of current eligibility. The v3 package includes both draft documents and the publication preparation guide.

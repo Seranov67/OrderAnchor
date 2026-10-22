@@ -1,6 +1,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
-import {exportCycle,makeBundle,parseBundle,verifyCycle,VerificationError,type VerifierReads} from '../src/evidence.ts';
-import {publicReader,readOnlyMarkets,stringify} from '../src/read-only.ts';
+import {exportCycle,makeBundle,parseBundle,verifyCycle,VerificationError} from '../src/evidence.ts';
+import {stringify} from '../src/read-only.ts';
+import {verifierReads} from '../src/verifier-rpc.ts';
 
 const [mode,input,output,...rest]=process.argv.slice(2);
 try {
@@ -13,26 +14,14 @@ try {
   } else if(mode==='verify') {
     if(!input||!output)throw new Error('Usage: verify <bundle> <new-output-report>');
     const bundle=parseBundle(JSON.parse(readFileSync(input,'utf8')));
-    const rpc=publicReader(),sdk=readOnlyMarkets();
-    const reads:VerifierReads={
-      chainId:()=>rpc.getChainId(),head:()=>rpc.getBlockNumber(),transaction:hash=>rpc.getTransaction({hash}),receipt:hash=>rpc.getTransactionReceipt({hash}),
-      async block(number){const b=await rpc.getBlock({blockNumber:number});return {hash:b.hash,number:b.number};},
-      nonce:(address,block)=>rpc.getTransactionCount({address,blockNumber:block}),
-      order:(pool,id,block)=>sdk.client.getOrderOnchain(pool,id,{blockNumber:block}),
-      async logs(pool,from,to){
-        if(to<from||to-from>1_000_000n)throw new Error('History range outside verifier bounds');
-        const all=[];
-        for(let start=from;start<=to;start+=1000n)all.push(...await rpc.getLogs({address:pool,fromBlock:start,toBlock:start+999n<to?start+999n:to}));
-        return all;
-      },
-    };
+    const adapter=verifierReads(),reads=adapter.reads;
     const results=[];
     try {
       for(const cycle of bundle.cycles) {
         try {const result=await verifyCycle(cycle,reads);results.push(result);console.log(stringify({id:result.id,status:result.status,state:result.state}));}
         catch(error){const result={id:cycle.intent.id,status:error instanceof VerificationError?'FAILED':'UNAVAILABLE',reason:error instanceof VerificationError?error.message:'RPC/read/decode unavailable; verification incomplete'};results.push(result);console.log(stringify(result));}
       }
-    } finally {await sdk.close();}
+    } finally {await adapter.close();}
     const verified=results.every(r=>r.status==='VERIFIED');
     const result={schema:'orderanchor-verification/v1',at:new Date().toISOString(),bundleSha256:bundle.sha256,verified,results,networkWrites:0,limitations:['Fresh RPC is the trust source; not a cryptographic light-client consensus proof','SHA-256 detects changes, not author authenticity','Process kill/restart and send-attempt counts are local claims; chain proves mined transactions in the stated nonce/block interval']};
     writeFileSync(output,stringify(result)+'\n',{flag:'wx'});if(!verified)process.exitCode=1;

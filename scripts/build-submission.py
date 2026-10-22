@@ -7,12 +7,18 @@ import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-NAME = 'OrderAnchor-submission-2026-10-22-v3'
+NAME = 'OrderAnchor-submission-2026-10-22-v4'
 STAGE = ROOT / 'submission' / NAME
 ARCHIVE = ROOT / 'dist' / (NAME + '.zip')
 BLOCKED = {'node_modules', 'secrets', 'data', 'tmp', '.git', '.codex', '.agents', '.aws', '.npm-cache', 'submission', 'dist', '__pycache__'}
 EVIDENCE = [
     'testnet-cycles-export-v1.json', 'testnet-cycles-verification-2026-10-22.json',
+    'rpc-history-verification-2026-10-22-v2.json',
+    'rpc-history-ui-recovery-2026-10-22-v2.json',
+    'demo-v2-cycles-export.json',
+    'demo-v2-crash-export.json',
+    'rpc-history-tests-2026-10-22.tap',
+    'rpc-history-failure-diagnostic-2026-10-22.json',
     'live-cycle-2026-10-22.json', 'live-place-receipt-2026-10-22.json', 'live-cancel-receipt-2026-10-22.json',
     'crash-cycle-2026-10-22.json', 'crash-place-receipt-2026-10-22.json', 'crash-cancel-receipt-2026-10-22.json', 'crash-summary-2026-10-22.json',
     'completion-check-2026-10-22.json', 'completion-tests-2026-10-22.tap', 'english-ui-tests-2026-10-22.tap',
@@ -67,6 +73,7 @@ def stage():
     for directory in ['src', 'ui', 'test', 'scripts', 'docs']:
         selected.extend(p.relative_to(ROOT).as_posix() for p in (ROOT / directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name not in {'audit-copilot-offline.mjs', 'audit-orderproof-offline.mjs', 'verify-copilot-receipts.mjs'})
     selected.extend('evidence/' + name for name in EVIDENCE)
+    selected.extend('media/demo-v2/' + name for name in ['OrderAnchor-demo-en-v2.mp4', 'OrderAnchor-demo-en-v2.mp4.sha256', 'OrderAnchor-demo-en.srt', 'TRANSCRIPT.md', 'successful-recovery.png', 'DEMO-CHECKS.json', 'README.md'])
     manifest = []
     for name in sorted(set(selected)):
         source = ROOT / safe(name)
