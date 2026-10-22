@@ -10,9 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 NAME = 'OrderAnchor-submission-2026-10-22-v4'
 STAGE = ROOT / 'submission' / NAME
 ARCHIVE = ROOT / 'dist' / (NAME + '.zip')
-BLOCKED = {'node_modules', 'secrets', 'data', 'tmp', '.git', '.codex', '.agents', '.aws', '.npm-cache', 'submission', 'dist', '__pycache__'}
+BLOCKED = {'node_modules', 'secrets', 'data', 'tmp', '.git', '.codex', '.agents', '.aws', '.npm-cache', 'submission', 'publication', 'dist', '__pycache__'}
 EVIDENCE = [
     'testnet-cycles-export-v1.json', 'testnet-cycles-verification-2026-10-22.json',
+    'dorahacks-submission-status-2026-10-22.json', 'dorahacks-submission-confirmation-2026-10-22.png',
     'rpc-history-verification-2026-10-22-v2.json',
     'rpc-history-ui-recovery-2026-10-22-v2.json',
     'demo-v2-cycles-export.json',

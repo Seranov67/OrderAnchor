@@ -1,0 +1,17 @@
+{
+  "schema": "orderanchor-contest-submission/v1",
+  "recordedAtUtc": "2026-10-22T18:34:31Z",
+  "project": "OrderAnchor",
+  "buildUrl": "https://dorahacks.io/build/50160",
+  "hackathon": "dreamDEX Perps Builder Bounty",
+  "track": "MVP",
+  "status": "Under Review",
+  "confirmationHeading": "Build Submitted!",
+  "persistedAfterPageReload": true,
+  "manageSubmissionButtonObserved": true,
+  "submissionAccessConfirmed": true,
+  "accessConfirmationBasis": "Successful server acceptance of the MVP submission; no separate whitelist roster accessed",
+  "judgingDecision": "pending",
+  "organizerOnlyContactsIncluded": false,
+  "newBlockchainTransactions": 0
+}

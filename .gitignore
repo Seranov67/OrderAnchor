@@ -67,3 +67,7 @@ dist/
 !evidence/demo-v2-crash-export.json
 !evidence/rpc-history-tests-2026-10-22.tap
 !evidence/rpc-history-failure-diagnostic-2026-10-22.json
+
+# Submitted status: public confirmation only, never organizer-only form data.
+!evidence/dorahacks-submission-status-2026-10-22.json
+!evidence/dorahacks-submission-confirmation-2026-10-22.png

@@ -8,8 +8,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 1760,
-      "sha256": "ccd0af6297d84232010e55d9fceb6c3df2c5b037e981f54967e4baaf7df816a7"
+      "bytes": 1952,
+      "sha256": "343f271e9df4145bb98aa9ddc193e0fc3ec9c56a0d4d3df263fdf6e461543112"
     },
     {
       "path": ".nvmrc",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6977,
-      "sha256": "00eb5aeca49b515ee434ddf748df1e168df048401566f9167a46b3f388239b35"
+      "bytes": 7499,
+      "sha256": "a80c8492aa60f11bbc0e22ef0d67e931b148a7519ecb2f59beca7a1643081b39"
     },
     {
       "path": "RUN.md",
@@ -38,28 +38,33 @@
     },
     {
       "path": "docs/CONTEST-READINESS-2026-10-22.md",
-      "bytes": 4494,
-      "sha256": "03e45d5f68b57afefaf5c50ee2a8656ccb4f08dc057436752848562c075761e2"
+      "bytes": 4748,
+      "sha256": "8d630a1f8353f239ff979361e6262a1352e9a4bc42da8d6bba61fc8fb0c77b15"
+    },
+    {
+      "path": "docs/CONTEST-SUBMISSION-2026-10-22.md",
+      "bytes": 5247,
+      "sha256": "dc303d01820583105728db4a42f9df25b84926f2224861baa0ecb2ef1be00dc4"
     },
     {
       "path": "docs/DEMO.md",
-      "bytes": 4601,
-      "sha256": "4bf7b8b35d31a29a403709935d98035c589a736e689f62d5919fdfee70e6ef12"
+      "bytes": 4781,
+      "sha256": "a4fa2c4f5aebc48e70078de33b57201c5ae620597a92e889c88d82d35925c884"
     },
     {
       "path": "docs/GITHUB-PREPARATION.md",
-      "bytes": 3967,
-      "sha256": "aebd5514e9a1acb784fd8dc30152d4b3c74f18f181b6cc74dd190a7b578d1e01"
+      "bytes": 4182,
+      "sha256": "190cb73972999278adb076c8c0bb9ed6b5855faa5679a6c0b10b25709c10835f"
     },
     {
       "path": "docs/SUBMISSION-FORM-DRAFT.md",
-      "bytes": 5849,
-      "sha256": "1c45fba7d2306d1d1292e937d96123dec9de388a7bac335df7a806568d6336a5"
+      "bytes": 5995,
+      "sha256": "e5b8b2ad07224a4f24dc0e8a22c378c6ec20302bae73d13ad275920bfbccb4ed"
     },
     {
       "path": "docs/SUBMISSION.md",
-      "bytes": 4126,
-      "sha256": "7a5502469c8b793c1f2891f1b4bb58beb9b5dd627bc48d2604c928d38531ffa8"
+      "bytes": 4407,
+      "sha256": "8798166732bd51f6f293bd01c3a3682a40da0e7c576c4fb6bbe7e039371f7818"
     },
     {
       "path": "docs/archive/plan-before-synthesis-2026-10-20.md",
@@ -98,8 +103,8 @@
     },
     {
       "path": "docs/rpc-history-fix-2026-10-22.md",
-      "bytes": 3560,
-      "sha256": "4c1ea4d30dbcca7d12f03da299e9fd13d321542a7751a43317187c07221c6af7"
+      "bytes": 3732,
+      "sha256": "6a73c03f750efa4f02054c6112a35a19583e4feb28c36865e45d8924484cfde6"
     },
     {
       "path": "docs/safe-release-2026-10-22.md",
@@ -113,8 +118,8 @@
     },
     {
       "path": "docs/stage-0.md",
-      "bytes": 4836,
-      "sha256": "82cb9ba8e032723bf744b93478b99c894fc60949914aecc3768ce6f5ba12ea07"
+      "bytes": 4999,
+      "sha256": "c7387820ead5c4f95b0faa885e2041b85986cb80241767c99200bb38744b9f03"
     },
     {
       "path": "docs/wallet-setup-2026-10-22.md",
@@ -165,6 +170,16 @@
       "path": "evidence/demo-v2-cycles-export.json",
       "bytes": 12420,
       "sha256": "b25454eca78cb2194ca5ab5947e85c260695fc389d3de47e7063bd2e33550a08"
+    },
+    {
+      "path": "evidence/dorahacks-submission-confirmation-2026-10-22.png",
+      "bytes": 24712,
+      "sha256": "774d68aa98ec3e7d15854e829b9edd46e028b8614c9a385aa184c12275521e29"
+    },
+    {
+      "path": "evidence/dorahacks-submission-status-2026-10-22.json",
+      "bytes": 657,
+      "sha256": "99104d65e8090547eab0e55a5958a5c039d31d9395d22302196de67b48841fcd"
     },
     {
       "path": "evidence/english-ui-tests-2026-10-22.tap",
@@ -288,8 +303,8 @@
     },
     {
       "path": "media/demo-v2/README.md",
-      "bytes": 2051,
-      "sha256": "5442e4743c2928cfb8907b6535e569babe5aba54410b19c9e2754b1c9d714e52"
+      "bytes": 2205,
+      "sha256": "664cdfcba6e71cbc3abac77ede905a460b7e24f241537c767809efa14b0e0336"
     },
     {
       "path": "media/demo-v2/TRANSCRIPT.md",
@@ -313,8 +328,8 @@
     },
     {
       "path": "scripts/build-submission.py",
-      "bytes": 8472,
-      "sha256": "d14727dde99b91dc3e08fca8db9641743254307b7942fa1eb58733bd355193bf"
+      "bytes": 8590,
+      "sha256": "eabf356c4436c113e27eeab95f5f3762a0250d3285fa55571f4140cddc600e47"
     },
     {
       "path": "scripts/check-completions.ts",
@@ -512,5 +527,5 @@
       "sha256": "fd101b2a51ad887240e32c18ff5f203a3db1828e3e7081a1ee382aae88c5636a"
     }
   ],
-  "note": "Current public repository payload hashes; excludes this manifest. Includes RPC history fix, English demo v2 and dated read-only verification. The original v3 archive remains unchanged."
+  "note": "Payload hashes; this manifest excludes itself."
 }

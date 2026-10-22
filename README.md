@@ -6,6 +6,14 @@ Recover the outcome of a dreamDEX Perps operation after a lost RPC response or p
 
 OrderAnchor is a local prototype for developers who need to answer: **Did my transaction land, what happened to the order, and is it safe to continue?**
 
+## Contest submission
+
+**Submitted — Under Review** on 22 October 2026, in the **MVP** track of dreamDEX Perps Builder Bounty.
+
+[DoraHacks Build](https://dorahacks.io/build/50160) · [Submission record](docs/CONTEST-SUBMISSION-2026-10-22.md) · [Confirmation](evidence/dorahacks-submission-confirmation-2026-10-22.png)
+
+DoraHacks displayed “Build Submitted!” and retained **Under Review** after a page reload. Successful server acceptance confirms submission access; judging is pending.
+
 ## Demo video
 
 [Watch / download the English demo v2 (MP4, 1m 38s)](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4) · [Subtitles and transcript](media/demo-v2/README.md)
@@ -84,7 +92,7 @@ All submission documentation is available in English. Start with [the submission
 
 ## Repository preparation
 
-The public repository is [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor). Its initial commit publishes the 87 files from the verified v3 submission archive; subsequent documentation updates add public links and refresh the manifest. See [publication preparation](docs/GITHUB-PREPARATION.md) for provenance and validation. The three X posts are published and linked below. Contest submission remains pending.
+The public repository is [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor). Its initial commit publishes the 87 files from the verified v3 submission archive; subsequent documentation updates add public links and refresh the manifest. See [publication preparation](docs/GITHUB-PREPARATION.md) for provenance and validation. The three X posts are published and linked below. OrderAnchor has been submitted to DoraHacks and is Under Review.
 
 ## X posts
 
@@ -94,4 +102,4 @@ Published by `@donnydan3` and checked on 22 October 2026. All three posts mentio
 2. [Demo v2: read-only recovery and JSON export](https://x.com/donnydan3/status/2113332347135201321)
 3. [Testnet evidence and verification](https://x.com/donnydan3/status/2113332451095261410)
 
-See the [submission form draft](docs/SUBMISSION-FORM-DRAFT.md) and [dated contest readiness checklist](docs/CONTEST-READINESS-2026-10-22.md).
+See the [submission reference](docs/SUBMISSION-FORM-DRAFT.md) and [dated contest readiness checklist](docs/CONTEST-READINESS-2026-10-22.md).

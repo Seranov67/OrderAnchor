@@ -8,7 +8,7 @@ Duration: 97.724 seconds. Full HD 1920×1080, H.264 / AAC, 30 fps. English synth
 
 This edited walkthrough uses genuine local application captures: inspect the recorded cycles, follow the persisted UNKNOWN-to-CONFIRMED journal, request fresh read-only RPC verification, inspect VERIFIED / CANCELLED / 0 filled / 0 remaining, and export public JSON. Held frames and cuts shorten waiting time; it is not continuous real-time screen recording.
 
-The original place, injected response loss, restart and cancel belong to the previously recorded testnet experiment. No new orders, cancellations, signing or broadcast occurred during recording or this publication. No contest form was submitted.
+The original place, injected response loss, restart and cancel belong to the previously recorded testnet experiment. No new orders, cancellations, signing or broadcast occurred during recording or this publication. The demo was recorded before the contest submission. OrderAnchor was subsequently [submitted to DoraHacks](https://dorahacks.io/build/50160) on 22 October 2026 and is **Under Review**.
 
 ## Fresh public evidence
 

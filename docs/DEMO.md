@@ -1,5 +1,7 @@
 # OrderAnchor — Demo and Evidence Guide
 
+Submitted to [DoraHacks](https://dorahacks.io/build/50160) on 22 October 2026, track MVP. Status: **Under Review**. See [the submission record](CONTEST-SUBMISSION-2026-10-22.md).
+
 ## Purpose
 
 An RPC timeout does not tell a trading bot whether its transaction landed. Blindly placing again can create a duplicate order. OrderAnchor persists the signed transaction and hash before sending, records uncertainty, then recovers the original operation from the chain after restart.

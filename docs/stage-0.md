@@ -1,5 +1,7 @@
 # OrderAnchor — stage 0, 20 October 2026
 
+Current status update (22 October 2026): OrderAnchor was submitted and is **Under Review**. See [the submission record](CONTEST-SUBMISSION-2026-10-22.md). The dated access observations below describe the earlier stage.
+
 Historical checkpoint: public network reads were complete; creation/funding/permission checks for a separate test wallet were still pending. These are the facts at this date, not the current state. Later cycle reports record funded execution.
 
 ## Measurements

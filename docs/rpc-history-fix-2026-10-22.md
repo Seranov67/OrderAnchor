@@ -26,4 +26,4 @@ The new English demo v2 uses genuine application captures, including the success
 
 ## Publication boundary
 
-The user authorized publication of the source fix, documentation, demo v2 and fresh public evidence to GitHub. No X post, contest submission, new order, cancellation, signing or broadcast was performed. The original v3 archive remains unchanged; the repository now includes this follow-up fix.
+The user authorized publication of the source fix, documentation, demo v2 and fresh public evidence to GitHub. No X post, contest submission, new order, cancellation, signing or broadcast was performed. The original v3 archive remains unchanged; the repository includes this follow-up fix. OrderAnchor was subsequently [submitted to DoraHacks](https://dorahacks.io/build/50160) and is **Under Review**; see [the submission record](CONTEST-SUBMISSION-2026-10-22.md).

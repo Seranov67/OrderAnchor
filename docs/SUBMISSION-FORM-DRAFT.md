@@ -1,6 +1,6 @@
-# OrderAnchor — submission form draft
+# OrderAnchor — submission reference
 
-Prepared on 22 October 2026. The project repository and three entrant-authored X posts are public; this form text remains a draft and the contest form has not been submitted. The exact form fields and character limits have not been inspected beyond the organizer disclaimer. Adapt the sections below to the actual form.
+OrderAnchor was submitted to [DoraHacks](https://dorahacks.io/build/50160) on 22 October 2026, track MVP. Status: **Under Review**, persisted after reloading the event Builds page. This file retains the English preparation reference; [the submission record and exact public description](CONTEST-SUBMISSION-2026-10-22.md) document the final result. Organizer-only contact answers are excluded.
 
 ## Name
 
@@ -54,12 +54,12 @@ Open http://127.0.0.1:4317. Public evidence can be inspected without a wallet, p
 
 See the [public evidence bundle](../evidence/testnet-cycles-export-v1.json) and [independent verification report](../evidence/testnet-cycles-verification-2026-10-22.json). Saved observations are dated; current state must be checked again through read-only RPC when needed.
 
-## Links to fill before submission
+## Submitted public links
 
 - Public GitHub repository: [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor).
 - Demo: [English video v2, 1m 38s](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4) · [Transcript, subtitles and evidence guide](https://github.com/Seranov67/OrderAnchor/blob/main/media/demo-v2/README.md).
 - X posts: three published posts by `@donnydan3`, each tagging `@DreamDEXSomnia`; verified on 22 October 2026 and linked below.
-- Team/contact and registration reward wallet: confirm in the actual form; do not substitute a bot wallet automatically.
+- DoraHacks Build: [https://dorahacks.io/build/50160](https://dorahacks.io/build/50160). Required organizer contact questions were completed privately. No reward-wallet change was made during submission.
 
 ## Published X posts
 
