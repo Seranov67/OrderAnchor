@@ -9,7 +9,7 @@ Checked on 22 October 2026 against the official dreamDEX Perps Builder Bounty [d
 | MVP places real Perps orders on Somnia Tokyo testnet | Demonstrated: two place/cancel cycles; four hashes and public evidence included |
 | GitHub repository | Published: [Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor) |
 | README explains purpose, audience and how to run | Present in English |
-| README section named “X posts” with 2–3 posts tagging @DreamDEXSomnia | Section added as pending; published links have not been supplied or verified |
+| README section named “X posts” with 2–3 posts tagging @DreamDEXSomnia | Completed: three public entrant-authored posts linked in README; all tag @DreamDEXSomnia |
 | Whitelisted DoraHacks email can submit a Build | Registration is active in the inspected session; whitelist/submission access is unconfirmed |
 | Submission before deadline | 1 November 2026, 23:59 UTC; 2 November, 01:59 Europe/Kyiv |
 
@@ -20,7 +20,7 @@ MVP evaluation covers user value and credible scope, repeat-use/viral potential,
 ## Remaining work
 
 1. Completed: published the verified v3 contents to [Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor) and added the repository link to the documentation.
-2. Review and publish 2–3 accurate X posts tagging @DreamDEXSomnia; place their actual links in README. Draft copy is in [the submission draft](SUBMISSION-FORM-DRAFT.md).
+2. Completed: the entrant published three X posts tagging @DreamDEXSomnia. Their public pages were checked on 22 October 2026, and the actual links are in the [README X posts section](../README.md#x-posts).
 3. Confirm submission whitelist access. If needed, the official instructions direct builders to [dreamDEX Discord](https://discord.gg/dreamdex) or [SomniaHacks Telegram](https://t.me/+s_oRMnGpOyQ3ODQ0) with their DoraHacks email. No message has been sent.
 4. Completed: [English demo v2 and public evidence](../media/demo-v2/README.md) are available from the repository. A hosted trading site is not needed to view the recording.
 5. Review organizer terms, confirm team/contact and the registration reward wallet, then inspect actual form fields and limits. The organizer disclaimer was read but not accepted; exact form requirements remain unconfirmed.

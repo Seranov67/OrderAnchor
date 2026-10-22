@@ -1,6 +1,6 @@
 # OrderAnchor — submission form draft
 
-Prepared on 22 October 2026. The project repository is now public; this form text and X posts remain drafts and the contest form has not been submitted. The exact form fields and character limits have not been inspected beyond the organizer disclaimer. Adapt the sections below to the actual form.
+Prepared on 22 October 2026. The project repository and three entrant-authored X posts are public; this form text remains a draft and the contest form has not been submitted. The exact form fields and character limits have not been inspected beyond the organizer disclaimer. Adapt the sections below to the actual form.
 
 ## Name
 
@@ -58,13 +58,13 @@ See the [public evidence bundle](../evidence/testnet-cycles-export-v1.json) and 
 
 - Public GitHub repository: [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor).
 - Demo: [English video v2, 1m 38s](https://github.com/Seranov67/OrderAnchor/raw/refs/heads/main/media/demo-v2/OrderAnchor-demo-en-v2.mp4) · [Transcript, subtitles and evidence guide](https://github.com/Seranov67/OrderAnchor/blob/main/media/demo-v2/README.md).
-- X posts: 2–3 published links tagging `@DreamDEXSomnia` are pending verification/publication approval.
+- X posts: three published posts by `@donnydan3`, each tagging `@DreamDEXSomnia`; verified on 22 October 2026 and linked below.
 - Team/contact and registration reward wallet: confirm in the actual form; do not substitute a bot wallet automatically.
 
-## Suggested X copy — unpublished drafts
+## Published X posts
 
-1. Building OrderAnchor for @DreamDEXSomnia: a local tool that journals transaction identity before broadcast, recovers an uncertain Perps operation by its original hash after restart, and exports public evidence. Built for bot developers debugging RPC timeouts. https://github.com/Seranov67/OrderAnchor
-2. OrderAnchor testnet demo: POST_ONLY place, locally hidden RPC response, process termination, restart, recovery of the original hash, then cancellation. No second placement in the tested cycle. Public receipts and verification included. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor/blob/main/docs/DEMO.md
-3. A receipt is only part of the story. OrderAnchor checks order state and scoped nonce history, and gates continuation on fresh completion evidence. Local English UI, portable public proofs and tested recovery guards. @DreamDEXSomnia https://github.com/Seranov67/OrderAnchor
+1. [Project introduction](https://x.com/donnydan3/status/2113332274603368682)
+2. [Demo v2: read-only recovery and JSON export](https://x.com/donnydan3/status/2113332347135201321)
+3. [Testnet evidence and verification](https://x.com/donnydan3/status/2113332451095261410)
 
-These are drafts, not evidence of published posts. Check final lengths after replacing placeholders.
+All three posts were supplied by the entrant and verified on their public X pages on 22 October 2026. The agent did not publish or edit these X posts.

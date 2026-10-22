@@ -84,8 +84,14 @@ All submission documentation is available in English. Start with [the submission
 
 ## Repository preparation
 
-The public repository is [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor). Its initial commit publishes the 87 files from the verified v3 submission archive; subsequent documentation updates add public links and refresh the manifest. See [publication preparation](docs/GITHUB-PREPARATION.md) for provenance and validation. Contest submission and X posts remain pending.
+The public repository is [https://github.com/Seranov67/OrderAnchor](https://github.com/Seranov67/OrderAnchor). Its initial commit publishes the 87 files from the verified v3 submission archive; subsequent documentation updates add public links and refresh the manifest. See [publication preparation](docs/GITHUB-PREPARATION.md) for provenance and validation. The three X posts are published and linked below. Contest submission remains pending.
 
 ## X posts
 
-Publication is pending. Before contest submission, add links to 2–3 posts about OrderAnchor tagging `@DreamDEXSomnia`. No published links have been supplied or verified yet. See the [unpublished submission and post drafts](docs/SUBMISSION-FORM-DRAFT.md) and [dated contest readiness checklist](docs/CONTEST-READINESS-2026-10-22.md).
+Published by `@donnydan3` and checked on 22 October 2026. All three posts mention OrderAnchor and tag `@DreamDEXSomnia`.
+
+1. [Project introduction](https://x.com/donnydan3/status/2113332274603368682)
+2. [Demo v2: read-only recovery and JSON export](https://x.com/donnydan3/status/2113332347135201321)
+3. [Testnet evidence and verification](https://x.com/donnydan3/status/2113332451095261410)
+
+See the [submission form draft](docs/SUBMISSION-FORM-DRAFT.md) and [dated contest readiness checklist](docs/CONTEST-READINESS-2026-10-22.md).
